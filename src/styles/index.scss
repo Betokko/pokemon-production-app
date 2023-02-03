@@ -1,0 +1,18 @@
+@import "normalize";
+@import "./variables/global";
+@import "./themes/dark";
+@import "./themes/light";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    font: var(--font-m);
+    background: var(--bg-color);
+    color: var(--primary-color);
+
+    min-height: 100vh;
+}
