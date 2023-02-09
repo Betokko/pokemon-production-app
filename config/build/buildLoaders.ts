@@ -18,7 +18,7 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
                 options: {
                     modules: {
                         auto: /\.module\.s[ac]ss$/i,
-                        localIdentName: options.isDev ?' [path][name]__[local]--[hash:base64:8]' : '[hash:base64:8]',
+                        localIdentName: options.isDev ? '[path][name]__[local]' : '[hash:base64]',
                     },
                 }
             },
