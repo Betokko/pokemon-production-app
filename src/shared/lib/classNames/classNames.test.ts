@@ -8,24 +8,24 @@ describe('classNames', () => {
     test('with additional class', () => {
         expect(classNames(
             'class1',
-            ['class4', 'class5'],
             { hovered: true, scrollable: true },
+            ['class4', 'class5'],
         )).toBe('class1 class4 class5 hovered scrollable');
     });
 
     test('with additional class', () => {
         expect(classNames(
             'class1',
-            ['class4', 'class5'],
             { hovered: true, scrollable: false },
+            ['class4', 'class5'],
         )).toBe('class1 class4 class5 hovered');
     });
 
     test('with additional class', () => {
         expect(classNames(
             'class1',
-            ['class4', 'class5'],
             { hovered: true, scrollable: undefined },
+            ['class4', 'class5'],
         )).toBe('class1 class4 class5 hovered');
     });
 });
