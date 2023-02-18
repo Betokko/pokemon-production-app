@@ -3,5 +3,6 @@
     "languageRu": "Russian",
     "main": "Main",
     "about": "About",
-    "loading": "Loading..."
+    "loading": "Loading...",
+    "notFound": "Page not found"
 }

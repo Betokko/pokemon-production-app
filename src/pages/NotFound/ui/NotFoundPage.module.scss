@@ -1,0 +1,14 @@
+.notFoundPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: var(--font-l);
+    height: 100%;
+
+    span {
+        color: var(--secondary-color);
+        font-size: 10rem;
+        line-height: 15rem;
+    }
+}

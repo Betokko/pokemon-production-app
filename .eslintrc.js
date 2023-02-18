@@ -44,7 +44,7 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'no-nested-ternary': 'off',
         'max-len': ['error', { ignoreComments: true, code: 120 }],
-        'i18next/no-literal-string': ['error', { markupOnly: true, onlyAttribute: [''] }],
+        'i18next/no-literal-string': ['error', { markupOnly: true, onlyAttribute: [''], ignore: ['😥'] }],
     },
     globals: {
         __IS_DEV__: true,
