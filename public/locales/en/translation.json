@@ -4,5 +4,7 @@
     "main": "Main",
     "about": "About",
     "loading": "Loading...",
-    "notFound": "Page not found"
+    "notFound": "Page not found",
+    "error": "Something went wrong",
+    "refresh": "Refresh"
 }
