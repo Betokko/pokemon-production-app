@@ -44,11 +44,18 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'no-nested-ternary': 'off',
         'max-len': ['error', { ignoreComments: true, code: 120 }],
-        // 'i18next/no-literal-string': 'off',
         'i18next/no-literal-string': ['error', { markupOnly: true, onlyAttribute: [''], ignore: ['😥'] }],
-        'no-restricted-globals': 'off',
+        ' no-trailing-spaces': 'off',
     },
     globals: {
         __IS_DEV__: true,
     },
+    overrides: [
+        {
+            files: ['**/src/**/*.test.{ts,tsx}'],
+            rules: {
+                'i18next/no-literal-string': 'off',
+            },
+        },
+    ],
 };

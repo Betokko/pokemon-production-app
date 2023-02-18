@@ -1,4 +1,5 @@
 {
+    "language": "Language",
     "languageEn": "English",
     "languageRu": "Russian",
     "main": "Main",
@@ -6,5 +7,8 @@
     "loading": "Loading...",
     "notFound": "Page not found",
     "error": "Something went wrong",
-    "refresh": "Refresh"
+    "refresh": "Refresh",
+    "theme": "Theme",
+    "darkTheme": "dark",
+    "lightTheme": "light"
 }

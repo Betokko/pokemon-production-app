@@ -4,7 +4,7 @@ import { Button, ThemeButton } from 'shared/ui/Button/Button';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 import { LangSwitcher } from 'widgets/LangSwitcher';
 import MenuIcon from 'shared/assets/icons/menu.svg';
-import styles from './Sidebar.module.scss';
+import s from './Sidebar.module.scss';
 
 interface SidebarProps {
   className?: string
@@ -19,16 +19,18 @@ export const Sidebar: FC<SidebarProps> = ({ className }) => {
 
     return (
         <div
-            className={classNames(styles.sidebar, { [styles.collapsed]: collapsed }, [className])}
+            data-testId="sidebar"
+            className={classNames(s.sidebar, { [s.collapsed]: collapsed }, [className])}
         >
             <Button
+                data-testId="sidebar-toggle"
                 onClick={onToggle}
                 theme={ThemeButton.CLEAR}
             >
                 <MenuIcon fill="var(--secondary-color)" />
             </Button>
-            <div className={classNames(styles.switchers, { [styles['switchers-collapsed']]: collapsed })}>
-                <ThemeSwitcher />
+            <div className={classNames(s.switchers, { [s['switchers-collapsed']]: collapsed })}>
+                <ThemeSwitcher withText={!collapsed} />
                 <LangSwitcher withText={!collapsed} />
             </div>
         </div>

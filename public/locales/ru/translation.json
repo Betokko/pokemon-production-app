@@ -1,4 +1,5 @@
 {
+    "language": "Язык",
     "languageEn": "Английский",
     "languageRu": "Русский",
     "main": "Главная",
@@ -6,5 +7,8 @@
     "loading": "Загрузка...",
     "notFound": "Страница не найдена",
     "error": "Что-то пошло не так",
-    "refresh": "Обновить"
+    "refresh": "Обновить",
+    "theme": "Тема",
+    "darkTheme": "тёмная",
+    "lightTheme": "светлая"
 }
