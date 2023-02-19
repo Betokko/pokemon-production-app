@@ -46,6 +46,7 @@ module.exports = {
         'max-len': ['error', { ignoreComments: true, code: 120 }],
         'i18next/no-literal-string': ['error', { markupOnly: true, onlyAttribute: [''], ignore: ['😥'] }],
         ' no-trailing-spaces': 'off',
+        'linebreak-style': 'off',
     },
     globals: {
         __IS_DEV__: true,

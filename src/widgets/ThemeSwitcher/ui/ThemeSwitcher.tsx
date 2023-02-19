@@ -23,7 +23,11 @@ export const ThemeSwitcher = (props: ThemeSwitcherProps) => {
             onClick={toggleTheme}
         >
             <div className={s.wrapper}>
-                {theme === Theme.DARK ? <DarkIcon fill="var(--primary-color" /> : <LightIcon /> }
+                {
+                    theme === Theme.DARK
+                        ? <DarkIcon fill="var(--primary-color" />
+                        : <LightIcon fill="var(--primary-color" />
+                }
                 <p>
                     {
                         withText && `${t('theme')}: ${
