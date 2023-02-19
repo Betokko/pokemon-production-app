@@ -12,7 +12,7 @@ export const parameters = {
         },
     },
     themes: {
-        default: 'dark',
+        default: 'light',
         list: [
             { name: 'light', class: 'light', color: '#fff' },
             { name: 'dark', class: 'dark', color: '#000' },
