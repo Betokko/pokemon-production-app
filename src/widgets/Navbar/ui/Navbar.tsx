@@ -19,12 +19,14 @@ export const Navbar = ({ className }: NavbarProps) => {
 
     return (
         <div className={classNames(s.navbar, {}, [])}>
-            <Button
-                theme={ThemeButton.CLEAR}
-                onClick={onToggleModal}
-            >
-                {t('signIn')}
-            </Button>
+            <div className={s.links}>
+                <Button
+                    theme={ThemeButton.CLEAR}
+                    onClick={onToggleModal}
+                >
+                    {t('signIn')}
+                </Button>
+            </div>
             <Modal
                 isOpen={isAuthModal}
                 onClose={onToggleModal}
