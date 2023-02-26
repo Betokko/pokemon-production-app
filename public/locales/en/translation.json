@@ -10,5 +10,8 @@
     "refresh": "Refresh",
     "theme": "Theme",
     "darkTheme": "dark",
-    "lightTheme": "light"
+    "lightTheme": "light",
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "logOut": "log out"
 }

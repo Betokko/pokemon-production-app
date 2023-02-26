@@ -10,5 +10,8 @@
     "refresh": "Обновить",
     "theme": "Тема",
     "darkTheme": "тёмная",
-    "lightTheme": "светлая"
+    "lightTheme": "светлая",
+    "signIn": "Войти",
+    "signUp": "Зарегистрироваться",
+    "logOut": "Выйти"
 }
