@@ -13,5 +13,7 @@
     "lightTheme": "light",
     "signIn": "Sign in",
     "signUp": "Sign up",
-    "logOut": "log out"
+    "logOut": "log out",
+    "userName": "User name",
+    "password": "Password"
 }
