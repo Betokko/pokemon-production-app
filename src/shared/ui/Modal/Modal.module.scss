@@ -19,11 +19,12 @@
 }
 
 .content {
+    color: var(--primary-color);
+    font: var(--font-m);
     padding: 2rem;
     border-radius: var(--border-radius-m);
     background: var(--bg-color);
     max-width: 50%;
-
     transition: 0.33s transform;
     transform: scale(0);
 }
@@ -31,6 +32,7 @@
 .opened {
     pointer-events: auto;
     opacity: 1;
+
     .content {
         transform: scale(1);
     }

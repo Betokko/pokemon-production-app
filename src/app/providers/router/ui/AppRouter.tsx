@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { routesConfig } from 'shared/config/routesConfig/routesConfig';
+import { routesConfig } from 'app/providers/router/config/routesConfig';
 import { useTranslation } from 'react-i18next';
 import { PageLoader } from 'widgets/PageLoader/ui/PageLoader';
 

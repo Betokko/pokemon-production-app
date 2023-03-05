@@ -11,7 +11,7 @@
     // Размеры
     --navbar-height: 4rem;
     --sidebar-width: 20rem;
-    --sidebar-width-collapsed: 4rem;
+    --sidebar-width-collapsed: calc(2rem + 24px);
     --border-radius-m: 1rem;
 
     // Z-индексы
