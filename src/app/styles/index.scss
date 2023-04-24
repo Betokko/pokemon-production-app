@@ -1,7 +1,7 @@
-@import "normalize";
-@import "variables/global";
-@import "themes/dark";
-@import "themes/light";
+@import "src/app/styles/normalize";
+@import "src/app/styles/variables/global";
+@import "src/app/styles/themes/dark";
+@import "src/app/styles/themes/light";
 
 * {
     margin: 0;

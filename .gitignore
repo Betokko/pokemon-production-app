@@ -1,6 +1,6 @@
 # Dependency directory
 node_modules
-build
+.build
 
 # Optional REPL history
 .DS_Store
