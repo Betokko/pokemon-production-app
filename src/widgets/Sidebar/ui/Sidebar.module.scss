@@ -1,0 +1,23 @@
+.sidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: calc(2rem + 24px) var(--layout-padding);
+    gap: 1rem;
+    background: var(--secondary-bg-color);
+    border-top: 1px solid var(--bg-color);
+    width: var(--sidebar-width);
+    height: calc(100vh - var(--navbar-height));
+    transition: width .2s;
+    overflow: hidden;
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+}
+
+.toggleIcon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}

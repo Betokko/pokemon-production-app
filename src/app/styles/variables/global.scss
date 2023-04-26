@@ -8,4 +8,10 @@
     --font-size-l: 1.5rem;
     --font-line-l: 2rem;
     --font-l: var(--font-size-l) / var(--font-line-l) var(--foont-family-main);
+
+    // Размеры
+    --navbar-height: 4rem;
+    --layout-padding: 1rem;
+    --sidebar-width-collapsed: calc(2rem + 24px);
+    --sidebar-width: 20rem;
 }
