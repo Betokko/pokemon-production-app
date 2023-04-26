@@ -1,6 +1,6 @@
-import React, {Suspense} from 'react';
-import {Route, Routes} from "react-router-dom";
-import {routeConfig} from '../lib/routeConfig'
+import React, { Suspense } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import { routeConfig } from '../lib/routeConfig'
 
 export const AppRouter = () => {
     return (
@@ -19,5 +19,5 @@ export const AppRouter = () => {
                 ))}
             </Routes>
         </Suspense>
-    );
-};
+    )
+}
