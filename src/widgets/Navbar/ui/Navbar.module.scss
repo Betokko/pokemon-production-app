@@ -8,6 +8,15 @@
     padding: var(--layout-padding);
 }
 
+.logo {
+    height: calc(100% + 1rem);
+
+    img {
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
 .links {
     margin-left: auto;
     display: flex;

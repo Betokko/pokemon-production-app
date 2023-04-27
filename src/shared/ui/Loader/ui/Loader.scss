@@ -1,0 +1,43 @@
+.fullscreenLoader {
+    min-height: calc(100vh - var(--navbar-height));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+@keyframes ldio-3nqcjp17l28 {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.ldio-3nqcjp17l28 div {
+    position: absolute;
+    box-sizing: content-box;
+    animation: ldio-3nqcjp17l28 1s linear infinite;
+    width: 160px;
+    height: 160px;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 0 0 var(--secondary-color);
+    transform-origin: 80px 82px;
+}
+
+.loadingio-spinner-eclipse-lghxqz3q0br {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    background: var(--bg-color);
+}
+
+.ldio-3nqcjp17l28 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+}

@@ -1,5 +1,8 @@
 {
     "main": "Main page",
     "about": "About page",
-    "lng": "Ru"
+    "lng": "Ru",
+    "page not found": "Page not found",
+    "something went wrong": "Something went wrong.",
+    "refresh page": "Refresh page"
 }

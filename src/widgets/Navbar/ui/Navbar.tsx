@@ -4,6 +4,7 @@ import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink'
 import { ThemeSwitcher } from 'features/ThemeSwitcher'
 import { useTranslation } from 'react-i18next'
 import { LangSwitcher } from 'features/LangSwitcher/ui/LangSwitcher'
+import logo from 'shared/assets/logo.png'
 
 interface NavbarProps {
     className?: string
@@ -15,7 +16,9 @@ export const Navbar = (props: NavbarProps) => {
 
     return (
         <div className={clsx([s.navbar, className])}>
-            <div></div>
+            <AppLink to={'/'} className={s.logo}>
+                <img src={logo} />
+            </AppLink>
 
             <div className={s.links}>
                 <AppLink to={'/'} theme={AppLinkTheme.SECONDARY}>

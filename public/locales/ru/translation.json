@@ -1,5 +1,8 @@
 {
     "main": "Главная",
     "about": "О сайте",
-    "lng": "En"
+    "lng": "En",
+    "page not found": "Страница не найдена",
+    "something went wrong": "Что-то пошло не так.",
+    "refresh page": "Обновить страницу"
 }
