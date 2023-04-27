@@ -15,7 +15,7 @@ export const Navbar = (props: NavbarProps) => {
 
     return (
         <div className={clsx([s.navbar, className])}>
-            <div>LOGO</div>
+            <div></div>
 
             <div className={s.links}>
                 <AppLink to={'/'} theme={AppLinkTheme.SECONDARY}>
