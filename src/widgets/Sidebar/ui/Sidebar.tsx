@@ -14,10 +14,14 @@ export const Sidebar: FC<SidebarProps> = (props) => {
     const toggle = () => { setCollapsed(!collapsed) }
 
     return (
-        <div className={clsx([s.sidebar, collapsed && s.collapsed, className])}>
+        <div
+            className={clsx([s.sidebar, collapsed && s.collapsed, className])}
+            data-testid='sidebar'
+        >
             <Button
                 className={s.toggleIcon}
                 onClick={toggle}
+                data-testid='toggleButton'
             >
                 <MenuIcon fill={'var(--primary-color)'}/>
             </Button>

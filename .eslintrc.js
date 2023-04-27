@@ -10,11 +10,18 @@ module.exports = {
         'plugin:i18next/recommended'
     ],
     overrides: [
+        {
+            files: ['**/src/**/*.test.{ts,tsx}'],
+            rules: {
+                'i18next/no-literal-string': 'off'
+            }
+        }
     ],
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
-        project: 'tsconfig.json'
+        project: './tsconfig.json',
+        tsconfigRootDir: __dirname
     },
     plugins: [
         'react',
