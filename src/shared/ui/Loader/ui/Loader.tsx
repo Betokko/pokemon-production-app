@@ -7,10 +7,19 @@ interface LoaderProps {
 
 export const Loader: FC<LoaderProps> = (props) => {
     return (
-        <div className="loadingio-spinner-eclipse-lghxqz3q0br">
-            <div className="ldio-3nqcjp17l28">
-                <div></div>
-            </div>
+        <div className="lds-spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     )
 }

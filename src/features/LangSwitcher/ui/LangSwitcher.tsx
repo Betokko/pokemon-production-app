@@ -19,8 +19,8 @@ export const LangSwitcher: FC<LangSwitcherProps> = (props) => {
             className={clsx([s.langSwitcher, className])}
             onClick={toggle}
             theme={ThemeButton.CLEAR}
+            label={t('lng')}
         >
-            {t('lng')}
             <TranslateIcon fill={'var(--primary-color)'}/>
         </Button>
     )

@@ -7,34 +7,35 @@ module.exports = {
     extends: [
         'plugin:react/recommended',
         'standard-with-typescript',
-        'plugin:i18next/recommended'
+        'plugin:i18next/recommended',
+        'plugin:storybook/recommended'
     ],
-    overrides: [
-        {
-            files: ['**/src/**/*.test.{ts,tsx}'],
-            rules: {
-                'i18next/no-literal-string': 'off'
-            }
+    overrides: [{
+        files: ['**/src/**/*.test.{ts,tsx}', '**/src/**/*.stories.{ts,tsx}'],
+        rules: {
+            'i18next/no-literal-string': 'off'
         }
-    ],
+    }],
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
         project: './tsconfig.json',
         tsconfigRootDir: __dirname
     },
-    plugins: [
-        'react',
-        'i18next'
-    ],
+    plugins: ['react', 'i18next'],
     rules: {
         indent: ['error', 4],
         quotes: ['error', 'single'],
         semi: ['error', 'never'],
-        'max-len': ['error', { code: 120, ignoreComments: true }],
+        'max-len': ['error', {
+            code: 120,
+            ignoreComments: true
+        }],
         'linebreak-style': ['error', 'windows'],
         'no-unused-vars': 'warn',
-        'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+        'react/jsx-filename-extension': ['error', {
+            extensions: ['.js', '.jsx', '.ts', '.tsx']
+        }],
         'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
         '@typescript-eslint/indent': ['error', 4],
@@ -43,6 +44,10 @@ module.exports = {
         '@typescript-eslint/no-misused-promises': 'off',
         '@typescript-eslint/strict-boolean-expressions': 'off',
         '@typescript-eslint/naming-convention': 'off',
-        'i18next/no-literal-string': ['error', { markupOnly: true, onlyAttribute: [''] }]
+        '@typescript-eslint/consistent-type-assertions': 'off',
+        'i18next/no-literal-string': ['error', {
+            markupOnly: true,
+            ignoreAttribute: ['data-testid', 'to', 'fill']
+        }]
     }
 }

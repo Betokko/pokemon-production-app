@@ -6,14 +6,16 @@ export enum ThemeButton {
     CLEAR = 'clear'
 }
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+    label?: string
     className?: string
     theme?: ThemeButton
 }
 
-export const Button: FC<ButtonProps> = (props) => {
+export const Button: FC<IButtonProps> = (props) => {
     const {
         className,
+        label,
         children,
         theme = ThemeButton.CLEAR,
         ...otherProps
@@ -24,6 +26,7 @@ export const Button: FC<ButtonProps> = (props) => {
             {...otherProps}
             className={clsx([s.button, s[theme], className])}
         >
+            {label}
             {children}
         </button>
     )
