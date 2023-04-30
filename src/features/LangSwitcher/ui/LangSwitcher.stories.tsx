@@ -1,4 +1,4 @@
-import type { StoryObj } from '@storybook/react'
+import { StoryObj } from '@storybook/react'
 import { LangSwitcher } from 'features/LangSwitcher/ui/LangSwitcher'
 
 const meta = {

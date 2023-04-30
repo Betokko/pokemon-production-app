@@ -1,5 +1,5 @@
-import { type FC } from 'react'
-import { Link, type LinkProps } from 'react-router-dom'
+import { FC } from 'react'
+import { Link, LinkProps } from 'react-router-dom'
 import clsx from 'clsx'
 import s from './AppLink.module.scss'
 

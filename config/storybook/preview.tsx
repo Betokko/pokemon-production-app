@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import { type Preview } from '@storybook/react'
+import { Preview } from '@storybook/react'
 import { Theme } from 'app/providers/ThemeProvider'
 import { BrowserRouter } from 'react-router-dom'
 import 'app/styles/index.scss'

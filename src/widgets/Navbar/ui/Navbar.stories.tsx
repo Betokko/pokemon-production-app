@@ -1,4 +1,4 @@
-import type { StoryObj } from '@storybook/react'
+import { StoryObj } from '@storybook/react'
 import { Navbar } from 'widgets/Navbar'
 import { BrowserRouter } from 'react-router-dom'
 

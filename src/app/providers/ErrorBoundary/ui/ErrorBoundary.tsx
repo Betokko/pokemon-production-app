@@ -1,4 +1,4 @@
-import React, { Suspense, type ErrorInfo, type ReactNode } from 'react'
+import React, { Suspense, ErrorInfo, ReactNode } from 'react'
 import { Error } from 'widgets/Error'
 
 export interface IErrorBoundaryProps {

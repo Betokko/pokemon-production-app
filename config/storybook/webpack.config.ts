@@ -1,7 +1,7 @@
-import type webpack from 'webpack'
-import { type RuleSetRule } from 'webpack'
+import webpack, { RuleSetRule } from 'webpack'
+
 import path from 'path'
-import { type IBuildPaths } from '../build/types/config'
+import { IBuildPaths } from '../build/types/config'
 import { buildCssLoader } from '../build/loaders/buildCssLoader'
 
 export default ({ config }: { config: webpack.Configuration }) => {

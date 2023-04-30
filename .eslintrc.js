@@ -51,6 +51,8 @@ module.exports = {
         }],
         'react/display-name': 'off',
         '@typescript-eslint/ban-ts-comment': 'off',
-        '@typescript-eslint/prefer-ts-expect-error': 'off'
+        '@typescript-eslint/prefer-ts-expect-error': 'off',
+        '@typescript-eslint/consistent-type-imports': ['warn', { prefer: 'no-type-imports' }]
+
     }
 }

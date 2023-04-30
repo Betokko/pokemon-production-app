@@ -1,4 +1,4 @@
-import type { StoryObj } from '@storybook/react'
+import { StoryObj } from '@storybook/react'
 import { AppLink, ThemeAppLink } from 'shared/ui/AppLink/AppLink'
 
 const meta = {

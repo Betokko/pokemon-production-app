@@ -1,4 +1,4 @@
-import type { StoryObj } from '@storybook/react'
+import { StoryObj } from '@storybook/react'
 import { Loader } from 'shared/ui/Loader'
 
 const meta = {

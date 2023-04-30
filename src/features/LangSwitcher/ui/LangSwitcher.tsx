@@ -1,4 +1,4 @@
-import { type FC } from 'react'
+import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import clsx from 'clsx'
 import TranslateIcon from 'shared/assets/icons/g_translate_black_24dp.svg'

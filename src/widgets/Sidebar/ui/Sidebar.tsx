@@ -1,4 +1,4 @@
-import { type FC, useState } from 'react'
+import { FC, useState } from 'react'
 import MenuIcon from 'shared/assets/icons/menu_black_24dp.svg'
 import clsx from 'clsx'
 import s from './Sidebar.module.scss'
