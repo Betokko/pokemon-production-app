@@ -21,12 +21,7 @@ export const Navbar = (props: NavbarProps) => {
             </AppLink>
 
             <div className={s.links}>
-                <AppLink to={'/'} theme={ThemeAppLink.SECONDARY}>
-                    {t('main')}
-                </AppLink>
-                <AppLink to={'/about'}>
-                    {t('about')}
-                </AppLink>
+
             </div>
 
             <div className={s.controls}>

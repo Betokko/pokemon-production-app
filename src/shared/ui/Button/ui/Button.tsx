@@ -12,7 +12,7 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     /**
      * Название кнопки
      */
-    label?: string
+    label?: string | JSX.Element
     /**
      * Передаваемый в кнопку класс
      */

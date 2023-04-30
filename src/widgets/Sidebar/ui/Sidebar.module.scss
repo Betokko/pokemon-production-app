@@ -12,12 +12,24 @@
     overflow: hidden;
 }
 
-.collapsed {
+.sidebarCollapsed {
     width: var(--sidebar-width-collapsed);
 }
 
 .toggleIcon {
     position: absolute;
     top: 1rem;
-    left: 1rem;
+    right: 1rem;
+    transition: transform 0.3s;
+    transition-delay: 0.1s;
+}
+
+.toggleIconCollapsed {
+    transform: rotate(180deg);
+}
+
+.linkIcon {
+    fill: var(--primary-color);
+    min-width: fit-content;
+    margin-right: 0.5rem;
 }

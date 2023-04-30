@@ -1,8 +1,12 @@
 import { FC, useState } from 'react'
-import MenuIcon from 'shared/assets/icons/menu_black_24dp.svg'
 import clsx from 'clsx'
 import s from './Sidebar.module.scss'
 import { Button } from 'shared/ui/Button'
+import BackIcon from 'shared/assets/icons/arrow_back_black_24dp.svg'
+import HomeIcon from 'shared/assets/icons/home_black_24dp.svg'
+import DescriptionIcon from 'shared/assets/icons/description_black_24dp.svg'
+import { AppLink } from 'shared/ui/AppLink/AppLink'
+import { useTranslation } from 'react-i18next'
 
 interface SidebarProps {
     className?: string
@@ -10,21 +14,33 @@ interface SidebarProps {
 
 export const Sidebar: FC<SidebarProps> = (props) => {
     const { className } = props
+    const { t } = useTranslation()
     const [collapsed, setCollapsed] = useState(true)
     const toggle = () => { setCollapsed(!collapsed) }
 
     return (
         <div
-            className={clsx([s.sidebar, collapsed && s.collapsed, className])}
+            className={clsx([s.sidebar, collapsed && s.sidebarCollapsed, className])}
             data-testid='sidebar'
         >
             <Button
-                className={s.toggleIcon}
+                className={clsx([s.toggleIcon, collapsed && s.toggleIconCollapsed])}
                 onClick={toggle}
                 data-testid='toggleButton'
             >
-                <MenuIcon fill={'var(--primary-color)'}/>
+                <BackIcon fill={'var(--primary-color)'}/>
             </Button>
+
+            <AppLink to={'/'}>
+                <HomeIcon className={ clsx(s.linkIcon) }/>
+                <div>{!collapsed && t('main')}</div>
+            </AppLink>
+
+            <AppLink to={'/about'}>
+                <DescriptionIcon className={ clsx(s.linkIcon) }/>
+                <div>{!collapsed && t('about')}</div>
+            </AppLink>
+
         </div>
     )
 }

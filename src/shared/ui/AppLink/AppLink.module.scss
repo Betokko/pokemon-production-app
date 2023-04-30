@@ -1,5 +1,8 @@
 .appLink {
     transition: opacity 0.2s;
+    display: flex;
+    justify-items: center;
+    white-space: nowrap;
 
     &:hover {
         opacity: 0.8;
