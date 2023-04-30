@@ -48,6 +48,9 @@ module.exports = {
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
             ignoreAttribute: ['data-testid', 'to', 'fill']
-        }]
+        }],
+        'react/display-name': 'off',
+        '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/prefer-ts-expect-error': 'off'
     }
 }

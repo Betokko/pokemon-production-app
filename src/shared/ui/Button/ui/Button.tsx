@@ -3,15 +3,29 @@ import clsx from 'clsx'
 import s from './Button.module.scss'
 
 export enum ThemeButton {
+    PRIMARY = 'primary',
+    SECONDARY = 'secondary',
     CLEAR = 'clear'
 }
 
 export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+    /**
+     * Название кнопки
+     */
     label?: string
+    /**
+     * Передаваемый в кнопку класс
+     */
     className?: string
+    /**
+     * Тема кнопки
+     */
     theme?: ThemeButton
 }
 
+/**
+ * Кнопка | UI компонент
+ */
 export const Button: FC<IButtonProps> = (props) => {
     const {
         className,

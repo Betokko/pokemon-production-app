@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import s from './Navbar.module.scss'
-import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink'
+import { AppLink, ThemeAppLink } from 'shared/ui/AppLink/AppLink'
 import { ThemeSwitcher } from 'features/ThemeSwitcher'
 import { useTranslation } from 'react-i18next'
 import { LangSwitcher } from 'features/LangSwitcher/ui/LangSwitcher'
@@ -21,7 +21,7 @@ export const Navbar = (props: NavbarProps) => {
             </AppLink>
 
             <div className={s.links}>
-                <AppLink to={'/'} theme={AppLinkTheme.SECONDARY}>
+                <AppLink to={'/'} theme={ThemeAppLink.SECONDARY}>
                     {t('main')}
                 </AppLink>
                 <AppLink to={'/about'}>

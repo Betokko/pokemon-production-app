@@ -1,7 +1,6 @@
 import { type FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import clsx from 'clsx'
-import s from './LangSwitcher.module.scss'
 import TranslateIcon from 'shared/assets/icons/g_translate_black_24dp.svg'
 import { Button, ThemeButton } from 'shared/ui/Button'
 
@@ -16,7 +15,7 @@ export const LangSwitcher: FC<LangSwitcherProps> = (props) => {
 
     return (
         <Button
-            className={clsx([s.langSwitcher, className])}
+            className={clsx([className])}
             onClick={toggle}
             theme={ThemeButton.CLEAR}
             label={t('lng')}

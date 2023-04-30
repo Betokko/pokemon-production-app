@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Loader } from 'shared/ui/Loader'
+import { Button, ThemeButton } from 'shared/ui/Button'
 
 const MainPage = () => {
     const { t } = useTranslation()
