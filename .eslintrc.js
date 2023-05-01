@@ -59,6 +59,7 @@ module.exports = {
         '@typescript-eslint/prefer-ts-expect-error': 'off',
         '@typescript-eslint/consistent-type-imports': ['warn', { prefer: 'no-type-imports' }],
         'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
-        'react-hooks/exhaustive-deps': 'error' // Checks effect dependencies
+        'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
+        'no-param-reassign': 'off'
     }
 }
