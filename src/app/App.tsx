@@ -1,7 +1,6 @@
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './styles/index.scss'
 import clsx from 'clsx'
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 import { useTheme } from 'app/providers/ThemeProvider'
 import { AppRouter } from 'app/providers/Router'
 import { Navbar } from 'widgets/Navbar'
@@ -15,7 +14,7 @@ export const App = () => {
             <Suspense fallback=''>
                 <Navbar />
                 <div className={'content'}>
-                    <Sidebar/>
+                    <Sidebar />
                     <AppRouter />
                 </div>
             </Suspense>

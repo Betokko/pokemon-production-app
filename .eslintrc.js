@@ -13,7 +13,8 @@ module.exports = {
     overrides: [{
         files: ['**/src/**/*.test.{ts,tsx}', '**/src/**/*.stories.{ts,tsx}'],
         rules: {
-            'i18next/no-literal-string': 'off'
+            'i18next/no-literal-string': 'off',
+            'max-len': 'off'
         }
     }],
     parserOptions: {
@@ -22,7 +23,11 @@ module.exports = {
         project: './tsconfig.json',
         tsconfigRootDir: __dirname
     },
-    plugins: ['react', 'i18next'],
+    plugins: [
+        'react',
+        'i18next',
+        'react-hooks'
+    ],
     rules: {
         indent: ['error', 4],
         quotes: ['error', 'single'],
@@ -52,7 +57,8 @@ module.exports = {
         'react/display-name': 'off',
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/prefer-ts-expect-error': 'off',
-        '@typescript-eslint/consistent-type-imports': ['warn', { prefer: 'no-type-imports' }]
-
+        '@typescript-eslint/consistent-type-imports': ['warn', { prefer: 'no-type-imports' }],
+        'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
+        'react-hooks/exhaustive-deps': 'error' // Checks effect dependencies
     }
 }

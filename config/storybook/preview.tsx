@@ -3,6 +3,7 @@ import { Preview } from '@storybook/react'
 import { Theme } from 'app/providers/ThemeProvider'
 import { BrowserRouter } from 'react-router-dom'
 import 'app/styles/index.scss'
+import { Portal } from 'shared/ui/Portal/Portal'
 
 const preview: Preview = {
     parameters: {

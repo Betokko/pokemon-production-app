@@ -1,4 +1,5 @@
 :root {
+    // Font
     --foont-family-main: bahnschrift, arial, sans-serif;
     --font-size-m: 1rem;
     --font-line-m: 1.5rem;
@@ -7,9 +8,15 @@
     --font-line-l: 2rem;
     --font-l: var(--font-size-l) / var(--font-line-l) var(--foont-family-main);
 
-    // Размеры
+    // Color
+    --overlay-color: rgb(0 0 0 / 50%);
+
+    // Size
     --navbar-height: 4rem;
-    --layout-padding: 1rem;
+    --inner-padding: 1rem;
     --sidebar-width-collapsed: calc(2rem + 24px);
     --sidebar-width: 20rem;
+
+    // Z-index
+    --modal-z: 100;
 }

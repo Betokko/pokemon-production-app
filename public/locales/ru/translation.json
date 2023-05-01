@@ -4,5 +4,8 @@
     "lng": "En",
     "page not found": "Страница не найдена",
     "something went wrong": "Что-то пошло не так.",
-    "refresh page": "Обновить страницу"
+    "refresh page": "Обновить страницу",
+    "sign in": "Войти",
+    "sign up": "Зарегистрироваться",
+    "sign out": "Выйти"
 }

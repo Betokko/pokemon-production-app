@@ -2,9 +2,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: calc(2rem + 24px) var(--layout-padding);
+    padding: calc(2rem + 24px) var(--inner-padding);
     gap: 1rem;
-    background: var(--secondary-bg-color);
+    background: var(--bg-secondary-color);
     border-top: 1px solid var(--bg-color);
     width: var(--sidebar-width);
     height: calc(100vh - var(--navbar-height));

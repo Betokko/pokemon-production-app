@@ -1,11 +1,11 @@
 .navbar {
     width: 100%;
     height: var(--navbar-height);
-    background: var(--secondary-bg-color);
+    background: var(--bg-secondary-color);
     display: flex;
     gap: 3rem;
     align-items: center;
-    padding: var(--layout-padding);
+    padding: var(--inner-padding);
 }
 
 .logo {
