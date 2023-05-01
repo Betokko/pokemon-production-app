@@ -1,4 +1,5 @@
-//
-// export interface StateSchema {
-//
-// }
+import { IUserSchema } from 'entities/User'
+
+export interface IStateSchema {
+    user: IUserSchema
+}

@@ -8,6 +8,7 @@ import logo from 'shared/assets/logo.png'
 import { Button, ThemeButton } from 'shared/ui/Button'
 import { useCallback, useState } from 'react'
 import { Modal } from 'shared/ui/Modal'
+import { LoginModal } from 'features/AuthByUserName'
 
 interface NavbarProps {
     className?: string
@@ -17,7 +18,8 @@ export const Navbar = (props: NavbarProps) => {
     const { className } = props
     const { t } = useTranslation()
     const [openAuthModal, setOpenAuthModal] = useState(false)
-    const onToggleModal = useCallback(() => { setOpenAuthModal(prev => !prev) }, [])
+    const onCloseModal = useCallback(() => { setOpenAuthModal(false) }, [])
+    const onShowModal = useCallback(() => { setOpenAuthModal(true) }, [])
 
     return (
         <div className={clsx([s.navbar, className])}>
@@ -26,7 +28,7 @@ export const Navbar = (props: NavbarProps) => {
             </AppLink>
 
             <div className={s.links}>
-                <Button onClick={onToggleModal} theme={ThemeButton.PRIMARY}>{t('sign in')}</Button>
+                <Button onClick={onShowModal} theme={ThemeButton.PRIMARY}>{t('sign in')}</Button>
             </div>
 
             <div className={s.controls}>
@@ -34,12 +36,10 @@ export const Navbar = (props: NavbarProps) => {
                 <ThemeSwitcher/>
             </div>
 
-            <Modal
+            <LoginModal
                 open={openAuthModal}
-                onClose={onToggleModal}
-            >
-                {t('sign in')}
-            </Modal>
+                onClose={onCloseModal}
+            />
         </div>
     )
 }
