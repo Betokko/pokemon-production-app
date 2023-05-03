@@ -30,3 +30,8 @@
     padding: 0;
     background: none;
 }
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}

@@ -28,3 +28,10 @@ export const Clear: Story = {
         theme: ThemeButton.CLEAR
     }
 }
+
+export const Disabled: Story = {
+    args: {
+        theme: ThemeButton.PRIMARY,
+        disabled: true
+    }
+}

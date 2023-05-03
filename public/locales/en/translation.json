@@ -7,5 +7,9 @@
     "refresh page": "Refresh page",
     "sign in": "Sign in",
     "sign up": "Sign up",
-    "sign out": "Sign out"
+    "sign out": "Sign out",
+    "password": "Password",
+    "username": "Username",
+    "authorization": "Authorization",
+    "login or password is incorrect": "Login or password is incorrect"
 }

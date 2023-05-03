@@ -8,10 +8,11 @@ interface IInputProps extends THTMLInputProps {
     className?: string
     value?: string
     onChange?: (value: string) => void
+    label?: string
 }
 
 export const Input = memo((props: IInputProps) => {
-    const { className, value, onChange, type = 'text', ...otherProps } = props
+    const { className, value, onChange, type = 'text', label, ...otherProps } = props
 
     const onChangeHandler = (evt: React.ChangeEvent<HTMLInputElement>) => {
         onChange?.(evt.target.value)
@@ -19,6 +20,7 @@ export const Input = memo((props: IInputProps) => {
 
     return (
         <div className={clsx([s.input, className])}>
+            {label}
             <input
                 type={type}
                 value={value}

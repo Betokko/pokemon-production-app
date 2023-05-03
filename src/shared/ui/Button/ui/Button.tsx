@@ -21,6 +21,10 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
      * Тема кнопки
      */
     theme?: ThemeButton
+    /**
+     * Статус
+     */
+    disabled?: boolean
 }
 
 /**
@@ -32,13 +36,15 @@ export const Button: FC<IButtonProps> = (props) => {
         label,
         children,
         theme = ThemeButton.CLEAR,
+        disabled,
         ...otherProps
     } = props
 
     return (
         <button
             {...otherProps}
-            className={clsx([s.button, s[theme], className])}
+            className={clsx([s.button, s[theme], disabled && [s.disabled], className])}
+            disabled={disabled}
         >
             {label}
             {children}

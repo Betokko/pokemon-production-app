@@ -3,7 +3,9 @@ import { Preview } from '@storybook/react'
 import { Theme } from 'app/providers/ThemeProvider'
 import { BrowserRouter } from 'react-router-dom'
 import 'app/styles/index.scss'
-import { Portal } from 'shared/ui/Portal/Portal'
+import { StoreProvider } from 'app/providers/StoreProvider'
+import { I18nextProvider } from 'react-i18next'
+import i18n from 'i18next'
 
 const preview: Preview = {
     parameters: {
@@ -25,11 +27,15 @@ const preview: Preview = {
 
 export const decorators = [
     (Story: any) => (
-        <BrowserRouter>
-            <Suspense fallback=''>
-                <Story />
-            </Suspense>
-        </BrowserRouter>
+        <StoreProvider initialState={{ user: {}, login: { username: 'admin', password: 'admin' } } }>
+            <I18nextProvider i18n={i18n}>
+                <Suspense fallback=''>
+                    <BrowserRouter>
+                        <Story />
+                    </BrowserRouter>
+                </Suspense>
+            </I18nextProvider>
+        </StoreProvider>
     )
 ]
 
