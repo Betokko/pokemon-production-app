@@ -1,7 +1,6 @@
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import clsx from 'clsx'
-import s from './LoginModal.module.scss'
 import { Modal } from 'shared/ui/Modal'
 import { LoginForm } from '../LoginForm/LoginForm'
 
@@ -17,7 +16,7 @@ export const LoginModal: FC<LoginModalProps> = (props) => {
 
     return (
         <Modal
-            className={clsx([s.loginModal, className])}
+            className={clsx([className])}
             open={open}
             onClose={onClose}
         >
