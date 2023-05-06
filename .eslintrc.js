@@ -52,7 +52,7 @@ module.exports = {
         '@typescript-eslint/consistent-type-assertions': 'off',
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
-            ignoreAttribute: ['data-testid', 'to', 'fill']
+            ignoreAttribute: ['data-testid', 'to', 'fill', 'name']
         }],
         'react/display-name': 'off',
         '@typescript-eslint/ban-ts-comment': 'off',
@@ -60,6 +60,7 @@ module.exports = {
         '@typescript-eslint/consistent-type-imports': ['warn', { prefer: 'no-type-imports' }],
         'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
         'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
-        'no-param-reassign': 'off'
+        'no-param-reassign': 'off',
+        '@typescript-eslint/no-dynamic-delete': 'off'
     }
 }

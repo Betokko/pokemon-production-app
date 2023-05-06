@@ -62,10 +62,12 @@ export const Navbar = (props: NavbarProps) => {
                 <ThemeSwitcher/>
             </div>
 
-            <LoginModal
-                open={openAuthModal}
-                onClose={onCloseModal}
-            />
+            {openAuthModal && (
+                <LoginModal
+                    open={openAuthModal}
+                    onClose={onCloseModal}
+                />
+            )}
         </div>
     )
 }

@@ -1,18 +1,16 @@
-import { FC } from 'react'
-import { useTranslation } from 'react-i18next'
+import { FC, Suspense } from 'react'
 import clsx from 'clsx'
 import { Modal } from 'shared/ui/Modal'
-import { LoginForm } from '../LoginForm/LoginForm'
+import { LoginFormLazy } from '../LoginForm/LoginForm.lazy'
 
-interface LoginModalProps {
+export interface ILoginModalProps {
     className?: string
     open: boolean
     onClose: () => void
 }
 
-export const LoginModal: FC<LoginModalProps> = (props) => {
+export const LoginModal: FC<ILoginModalProps> = (props) => {
     const { className, open, onClose } = props
-    const { t } = useTranslation()
 
     return (
         <Modal
@@ -20,7 +18,9 @@ export const LoginModal: FC<LoginModalProps> = (props) => {
             open={open}
             onClose={onClose}
         >
-            <LoginForm />
+            <Suspense fallback=''>
+                <LoginFormLazy />
+            </Suspense>
         </Modal>
     )
 }
