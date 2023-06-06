@@ -12,5 +12,9 @@
     "username": "Имя пользователя",
     "authorization": "Авторизация",
     "login or password is incorrect": "Логин или пароль неверный",
-    "profile page": "Профиль"
+    "profile page": "Профиль",
+    "error": "Ошибка",
+    "edit": "Редактировать",
+    "firstname": "Имя",
+    "lastname": "Фамилия"
 }

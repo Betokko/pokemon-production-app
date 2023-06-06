@@ -61,6 +61,8 @@ module.exports = {
         'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
         'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
         'no-param-reassign': 'off',
-        '@typescript-eslint/no-dynamic-delete': 'off'
+        '@typescript-eslint/no-dynamic-delete': 'off',
+        '@typescript-eslint/no-invalid-void-type': 'off',
+        '@typescript-eslint/no-floating-promises': 'off'
     }
 }

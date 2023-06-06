@@ -12,5 +12,9 @@
     "username": "Username",
     "authorization": "Authorization",
     "login or password is incorrect": "Login or password is incorrect",
-    "profile page": "Profile"
+    "profile page": "Profile",
+    "error": "Error",
+    "edit": "Edit",
+    "firstname": "Firstname",
+    "lastname": "Lastname"
 }

@@ -16,5 +16,14 @@
             "password": "admin"
         }
     ],
-    "profile": { "name": "typicode" }
+    "profile": {
+        "firstname": "Artur",
+        "lastname": "Nikitin",
+        "age": "33",
+        "currency": "RUB",
+        "country": "Russia",
+        "city": "Tolyatti",
+        "username": "Admin",
+        "avatar": "https://placehold.co/200x200?text=placeholder"
+    }
 }
