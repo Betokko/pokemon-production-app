@@ -11,5 +11,6 @@
     "password": "Password",
     "username": "Username",
     "authorization": "Authorization",
-    "login or password is incorrect": "Login or password is incorrect"
+    "login or password is incorrect": "Login or password is incorrect",
+    "profile page": "Profile"
 }

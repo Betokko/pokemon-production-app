@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import clsx from 'clsx'
 import s from './ThemeSwitcher.module.scss'
 import { Theme, useTheme } from 'app/providers/ThemeProvider'
@@ -9,7 +10,7 @@ interface ThemeSwitcherProps {
     className?: string
 }
 
-export const ThemeSwitcher = (props: ThemeSwitcherProps) => {
+export const ThemeSwitcher = memo((props: ThemeSwitcherProps) => {
     const { theme, toggleTheme } = useTheme()
     const { className } = props
 
@@ -26,4 +27,4 @@ export const ThemeSwitcher = (props: ThemeSwitcherProps) => {
             }
         </Button>
     )
-}
+})

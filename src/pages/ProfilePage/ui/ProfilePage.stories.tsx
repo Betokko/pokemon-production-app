@@ -1,9 +1,9 @@
 import { StoryObj } from '@storybook/react'
-import { MainPage } from '../index'
+import { ProfilePage } from '../index'
 
 const meta = {
-    title: 'pages/MainPage',
-    component: MainPage
+    title: 'pages/ProfilePage',
+    component: ProfilePage
 }
 
 export default meta

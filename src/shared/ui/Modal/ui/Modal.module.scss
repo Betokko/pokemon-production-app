@@ -27,7 +27,6 @@
     padding: var(--inner-padding);
     background: var(--bg-primary-color);
     border-radius: 1rem;
-    transform: scale(0.5);
     opacity: 0;
     transition: all 0.3s;
     max-width: 50%;
@@ -38,13 +37,8 @@
     pointer-events: auto;
     z-index: var(--modal-z);
 
-    .modal {
-        opacity: 1;
-    }
-
     .content {
         opacity: 1;
-        transform: scale(1);
     }
 }
 
@@ -53,6 +47,5 @@
 
     .content {
         opacity: 0;
-        transform: scale(0.5);
     }
 }

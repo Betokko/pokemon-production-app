@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, FC } from 'react'
+import { ButtonHTMLAttributes, memo } from 'react'
 import clsx from 'clsx'
 import s from './Button.module.scss'
 
@@ -30,7 +30,7 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 /**
  * Кнопка | UI компонент
  */
-export const Button: FC<IButtonProps> = (props) => {
+export const Button = memo((props: IButtonProps) => {
     const {
         className,
         label,
@@ -50,4 +50,4 @@ export const Button: FC<IButtonProps> = (props) => {
             {children}
         </button>
     )
-}
+})
