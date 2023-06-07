@@ -4,8 +4,10 @@ import s from './Button.module.scss'
 
 export enum ThemeButton {
     PRIMARY = 'primary',
-    SECONDARY = 'secondary',
-    CLEAR = 'clear'
+    OUTLINE = 'outline',
+    CLEAR = 'clear',
+    OUTLINE_RED = 'outline-red',
+    RED = 'red'
 }
 
 export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

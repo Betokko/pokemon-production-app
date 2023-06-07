@@ -6,10 +6,15 @@
         background: var(--bg-color);
         border: none;
         color: var(--primary-color);
+        text-overflow: ellipsis;
     }
 
     input:focus {
         outline: none;
         box-shadow: 0 0 4px 2px var(--secondary-color);
     }
+}
+
+.readOnly {
+    opacity: 0.5;
 }

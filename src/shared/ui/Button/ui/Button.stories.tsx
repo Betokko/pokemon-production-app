@@ -17,9 +17,21 @@ export const Primary: Story = {
     }
 }
 
-export const Secondary: Story = {
+export const Outline: Story = {
     args: {
-        theme: ThemeButton.SECONDARY
+        theme: ThemeButton.OUTLINE
+    }
+}
+
+export const Red: Story = {
+    args: {
+        theme: ThemeButton.RED
+    }
+}
+
+export const OutlineRed: Story = {
+    args: {
+        theme: ThemeButton.OUTLINE_RED
     }
 }
 

@@ -1,17 +1,26 @@
-.profileCard {
-    background: var(--bg-secondary-color);
-    padding: 2rem;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-}
-
 .data {
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 20rem;
+}
+
+.loading,
+.error {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholderWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.inputsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background: var(--bg-secondary-color);
 }

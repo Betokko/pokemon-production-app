@@ -9,7 +9,7 @@ import { Button, ThemeButton } from 'shared/ui/Button'
 import { memo, useCallback, useState } from 'react'
 import { LoginModal } from 'features/AuthByUserName'
 import { useDispatch, useSelector } from 'react-redux'
-import { selectUserAuthData, userActions } from 'entities/User'
+import { getUserAuthData, userActions } from 'entities/User'
 
 interface NavbarProps {
     className?: string
@@ -19,7 +19,7 @@ export const Navbar = memo((props: NavbarProps) => {
     const { className } = props
     const { t } = useTranslation()
     const dispatch = useDispatch()
-    const authData = useSelector(selectUserAuthData)
+    const authData = useSelector(getUserAuthData)
     const [openAuthModal, setOpenAuthModal] = useState(false)
     const onCloseModal = useCallback(() => { setOpenAuthModal(false) }, [])
     const onShowModal = useCallback(() => { setOpenAuthModal(true) }, [])

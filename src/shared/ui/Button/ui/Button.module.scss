@@ -21,7 +21,7 @@
     background: var(--secondary-color);
 }
 
-.secondary {
+.outline {
     background: transparent;
     border: 1px solid var(--primary-color);
 }
@@ -29,6 +29,17 @@
 .clear {
     padding: 0;
     background: none;
+}
+
+.red {
+    color: #fff;
+    background: var(--red-light);
+}
+
+.outline-red {
+    background: transparent;
+    color: var(--red-light);
+    border: 1px solid var(--red-light);
 }
 
 .disabled {

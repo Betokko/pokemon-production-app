@@ -8,6 +8,8 @@ import DescriptionIcon from 'shared/assets/icons/description_black_24dp.svg'
 import PersonIcon from 'shared/assets/icons/person_black_24dp.svg'
 import { AppLink } from 'shared/ui/AppLink/AppLink'
 import { useTranslation } from 'react-i18next'
+import { useSelector } from 'react-redux'
+import { getUserAuthData } from 'entities/User'
 
 interface SidebarProps {
     className?: string
@@ -18,6 +20,7 @@ export const Sidebar = memo((props: SidebarProps) => {
     const { t } = useTranslation()
     const [collapsed, setCollapsed] = useState(true)
     const toggle = () => { setCollapsed(!collapsed) }
+    const isAuth = useSelector(getUserAuthData)
 
     return (
         <div
@@ -42,10 +45,12 @@ export const Sidebar = memo((props: SidebarProps) => {
                 <div>{!collapsed && t('about')}</div>
             </AppLink>
 
-            <AppLink to={'/profile'}>
-                <PersonIcon className={ clsx(s.linkIcon) }/>
-                <div>{!collapsed && t('profile page')}</div>
-            </AppLink>
+            {isAuth && (
+                <AppLink to={'/profile'}>
+                    <PersonIcon className={ clsx(s.linkIcon) }/>
+                    <div>{!collapsed && t('profile page')}</div>
+                </AppLink>
+            )}
 
         </div>
     )

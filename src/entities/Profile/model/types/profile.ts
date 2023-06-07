@@ -1,19 +1,20 @@
-import { Currency } from 'shared/const/common'
+import { Currency } from 'entities/Currency/model/types/currency'
 
 export interface IProfile {
-    'firstname': string
-    'lastname': string
-    'age': number
-    'currency': Currency
-    'country': string
-    'city': string
-    'username': string
-    'avatar': string
+    'firstname'?: string
+    'lastname'?: string
+    'age'?: number
+    'currency'?: Currency
+    'country'?: string
+    'city'?: string
+    'username'?: string
+    'placeholder'?: string
 }
 
 export interface IProfileSchema {
     data?: IProfile
+    form?: IProfile
     isLoading: boolean
     error?: string
-    readonly: boolean
+    readOnly: boolean
 }

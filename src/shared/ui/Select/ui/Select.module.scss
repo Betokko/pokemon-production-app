@@ -1,0 +1,17 @@
+.select {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.options {
+    background: none;
+    outline: none;
+    color: var(--primary-color);
+    padding: 0.2rem 1rem 0.2rem 0.2rem;
+    border: 1px solid var(--primary-color);
+}
+
+.readOnly {
+    opacity: 0.5;
+}

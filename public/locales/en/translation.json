@@ -16,5 +16,11 @@
     "error": "Error",
     "edit": "Edit",
     "firstname": "Firstname",
-    "lastname": "Lastname"
+    "lastname": "Lastname",
+    "cancel": "Cancel",
+    "save": "Save",
+    "age": "Age",
+    "city": "City",
+    "placeholder": "Placeholder",
+    "currency": "Currency"
 }

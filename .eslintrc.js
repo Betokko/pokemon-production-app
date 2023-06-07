@@ -52,7 +52,7 @@ module.exports = {
         '@typescript-eslint/consistent-type-assertions': 'off',
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
-            ignoreAttribute: ['data-testid', 'to', 'fill', 'name']
+            ignoreAttribute: ['data-testid', 'to', 'fill', 'name', 'size']
         }],
         'react/display-name': 'off',
         '@typescript-eslint/ban-ts-comment': 'off',
