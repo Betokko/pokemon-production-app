@@ -1,31 +1,28 @@
-import { memo, Suspense, useMemo } from 'react'
+import { memo, Suspense, useCallback } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { routeConfig } from '../lib/routeConfig'
+import { routeConfig, TAppRouterProps } from '../lib/routeConfig'
 import { FullscreenLoader } from 'shared/ui/Loader'
-import { useSelector } from 'react-redux'
-import { getUserAuthData } from 'entities/User/model/selectors/getUserAuthData'
+import { RequireAuth } from 'app/providers/Router/ui/RequireAuth'
 
 export const AppRouter = memo(() => {
-    const isAuth = useSelector(getUserAuthData)
-    const routes = useMemo(() => Object.values(routeConfig).filter((route) => {
-        return !(route.authOnly && !isAuth)
-    }), [isAuth])
+    const renderWithWrapper = useCallback((route: TAppRouterProps) => {
+        const element = (
+            <Suspense fallback={<FullscreenLoader/>}>
+                <div className={'page-wrapper'}>
+                    {route.element}
+                </div>
+            </Suspense>
+        )
+        return <Route
+            key={route.path}
+            path={route.path}
+            element={ route.authOnly ? <RequireAuth>{element}</RequireAuth> : element }
+        />
+    }, [])
 
     return (
         <Routes>
-            {routes.map(({ path, element }) => (
-                <Route
-                    key={path}
-                    path={path}
-                    element={(
-                        <Suspense fallback={<FullscreenLoader/>}>
-                            <div className={'page-wrapper'}>
-                                {element}
-                            </div>
-                        </Suspense>
-                    )}
-                />
-            ))}
+            {Object.values(routeConfig).map(renderWithWrapper)}
         </Routes>
     )
 })

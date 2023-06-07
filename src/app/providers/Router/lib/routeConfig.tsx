@@ -4,7 +4,7 @@ import { RouteProps } from 'react-router-dom'
 import { NotFoundPage } from 'pages/NotFoundPage'
 import { ProfilePage } from 'pages/ProfilePage'
 
-type AppRouterProps = RouteProps & {
+export type TAppRouterProps = RouteProps & {
     authOnly?: boolean
 }
 
@@ -24,7 +24,7 @@ export const RoutePath: Record<AppRoute, string> = {
     [AppRoute.NOT_FOUND]: '*'
 }
 
-export const routeConfig: AppRouterProps[] = [
+export const routeConfig: TAppRouterProps[] = [
     { path: RoutePath.main, element: <MainPage /> },
     { path: RoutePath.about, element: <AboutPage /> },
     { path: RoutePath.profile, element: <ProfilePage/>, authOnly: true },
