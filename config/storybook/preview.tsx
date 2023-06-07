@@ -19,7 +19,8 @@ const preview: Preview = {
         themes: {
             list: [
                 { name: 'Light', class: ['app', Theme.LIGHT], color: '#fff', default: true },
-                { name: 'Dark', class: ['app', Theme.DARK], color: '#000' }
+                { name: 'Dark', class: ['app', Theme.DARK], color: '#000' },
+                { name: 'Pikachu', class: ['app', Theme.PIKACHU], color: '#F7D223' }
             ]
         }
     }

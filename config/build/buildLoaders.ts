@@ -2,6 +2,7 @@ import webpack from 'webpack'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import { IBuildOptions } from './types/config'
 import { buildCssLoader } from './loaders/buildCssLoader'
+import { buildBabelLoaders } from './loaders/buildBabelLoaders'
 
 export function buildLoaders (options: IBuildOptions): webpack.RuleSetRule[] {
     const { isDev } = options
@@ -24,18 +25,7 @@ export function buildLoaders (options: IBuildOptions): webpack.RuleSetRule[] {
         exclude: /node_modules/
     }
     const scssLoader = buildCssLoader(isDev)
-    const babelLoader = {
-        test: /\.(?:js|jsx|ts|tsx)$/,
-        exclude: /node_modules/,
-        use: {
-            loader: 'babel-loader',
-            options: {
-                presets: [
-                    ['@babel/preset-env']
-                ]
-            }
-        }
-    }
+    const babelLoader = buildBabelLoaders(isDev)
 
     return [
         fileLoader,

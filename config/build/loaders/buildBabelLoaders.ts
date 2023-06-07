@@ -1,0 +1,13 @@
+export function buildBabelLoaders (isDev: boolean) {
+    return {
+        test: /\.(?:js|jsx|ts|tsx)$/,
+        exclude: /node_modules/,
+        use: {
+            loader: 'babel-loader',
+            options: {
+                presets: [['@babel/preset-env']],
+                plugins: [isDev && require.resolve('react-refresh/babel')].filter(Boolean)
+            }
+        }
+    }
+}
