@@ -14,7 +14,7 @@ export default (env: IBuildEnv) => {
     const PORT = env.port || 3000
     const apiURL = env.apiURL || 'http://localhost:8080'
 
-    const config = () => buildWebpackConfig({ paths, mode, isDev, port: PORT, apiURL })
+    const config = () => buildWebpackConfig({ paths, mode, isDev, port: PORT, apiURL, project: 'frontend' })
 
     return config()
 }
