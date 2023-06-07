@@ -12,7 +12,7 @@
     "username": "Имя пользователя",
     "authorization": "Авторизация",
     "login or password is incorrect": "Логин или пароль неверный",
-    "profile page": "Профиль",
+    "profile": "Профиль",
     "error": "Ошибка",
     "edit": "Редактировать",
     "firstname": "Имя",
@@ -22,5 +22,6 @@
     "age": "Возраст",
     "city": "Город",
     "placeholder": "Аватар",
-    "currency": "Валюта"
+    "currency": "Валюта",
+    "pokemons": "Покемоны"
 }

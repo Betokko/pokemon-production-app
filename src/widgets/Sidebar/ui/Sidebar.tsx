@@ -6,6 +6,7 @@ import BackIcon from 'shared/assets/icons/arrow_back_black_24dp.svg'
 import HomeIcon from 'shared/assets/icons/home_black_24dp.svg'
 import DescriptionIcon from 'shared/assets/icons/description_black_24dp.svg'
 import PersonIcon from 'shared/assets/icons/person_black_24dp.svg'
+import Pokeball from 'shared/assets/icons/pokeball_black_24dp.svg'
 import { AppLink } from 'shared/ui/AppLink/AppLink'
 import { useTranslation } from 'react-i18next'
 import { useSelector } from 'react-redux'
@@ -48,7 +49,14 @@ export const Sidebar = memo((props: SidebarProps) => {
             {isAuth && (
                 <AppLink to={'/profile'}>
                     <PersonIcon className={ clsx(s.linkIcon) }/>
-                    <div>{!collapsed && t('profile page')}</div>
+                    <div>{!collapsed && t('profile')}</div>
+                </AppLink>
+            )}
+
+            {isAuth && (
+                <AppLink to={'/articles'}>
+                    <Pokeball className={ clsx(s.linkIcon) }/>
+                    <div>{!collapsed && t('pokemons')}</div>
                 </AppLink>
             )}
 

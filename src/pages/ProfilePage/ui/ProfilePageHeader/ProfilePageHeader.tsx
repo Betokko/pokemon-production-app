@@ -31,7 +31,7 @@ export const ProfilePageHeader = (props: ProfilePageHeaderProps) => {
 
     return (
         <div className={clsx([s.profilePageHeader, className])}>
-            <Text title={t('profile page')} />
+            <Text title={t('profile')} />
             {readOnly
                 ? (<Button
                     theme={ThemeButton.OUTLINE}
