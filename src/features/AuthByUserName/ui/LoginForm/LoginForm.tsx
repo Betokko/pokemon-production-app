@@ -14,7 +14,7 @@ import { loginByUsername } from 'features/AuthByUserName/model/services/loginByU
 import { Button, ThemeButton } from 'shared/ui/Button'
 import { Input } from 'shared/ui/Input'
 import { Loader } from 'shared/ui/Loader'
-import { Text, ThemeText } from 'shared/ui/Text/ui/Text'
+import { Text, TextTheme } from 'shared/ui/Text/ui/Text'
 import { DynamicModuleLoader, TReducersList } from 'shared/lib/components/DynamicModuleLoader'
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch'
 
@@ -52,7 +52,7 @@ const LoginForm = memo(({ className }: LoginFormProps) => {
                 ? <Loader/>
                 : <div className={clsx([s.loginForm, className])}>
                     <Text title={t('authorization')} className={s.loginTitle}/>
-                    {error && <Text text={error} theme={ThemeText.ERROR} className={s.loginError}/>}
+                    {error && <Text text={error} theme={TextTheme.ERROR} className={s.loginError}/>}
                     <Input
                         value={username}
                         onChange={onChangeUsername}

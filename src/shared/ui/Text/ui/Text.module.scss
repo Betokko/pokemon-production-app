@@ -1,10 +1,8 @@
 .title {
-    font: var(--font-l);
     color: var(--secondary-color);
 }
 
 .text {
-    font: var(--font-m);
     color: var(--primary-color);
 }
 
@@ -28,4 +26,34 @@
 
 .center {
     text-align: center;
+}
+
+.size-s {
+    .title {
+        font: var(--font-s);
+    }
+
+    .text {
+        font: var(--font-s);
+    }
+}
+
+.size-m {
+    .title {
+        font: var(--font-m);
+    }
+
+    .text {
+        font: var(--font-m);
+    }
+}
+
+.size-l {
+    .title {
+        font: var(--font-l);
+    }
+
+    .text {
+        font: var(--font-l);
+    }
 }

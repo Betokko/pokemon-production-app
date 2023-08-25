@@ -43,7 +43,7 @@ module.exports = {
         }],
         'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
-        '@typescript-eslint/indent': ['error', 4],
+        '@typescript-eslint/indent': ['error', 4, { SwitchCase: 0 }],
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/promise-function-async': 'off',
         '@typescript-eslint/no-misused-promises': 'off',

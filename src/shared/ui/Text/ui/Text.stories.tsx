@@ -1,5 +1,5 @@
 import { StoryObj } from '@storybook/react'
-import { Text, ThemeText } from './Text'
+import { Text, TextSize, TextTheme } from './Text'
 
 const lorem = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto est magni nostrum quia voluptates. Architecto eaque, error fugit itaque molestiae necessitatibus nulla officia omnis praesentium quas, sit soluta suscipit, veritatis?'
 const meta = {
@@ -22,7 +22,7 @@ export const Error: Story = {
     args: {
         title: lorem,
         text: lorem,
-        theme: ThemeText.ERROR
+        theme: TextTheme.ERROR
     }
 }
 
@@ -35,5 +35,12 @@ export const Title: Story = {
 export const Normal: Story = {
     args: {
         text: lorem
+    }
+}
+
+export const SizeL: Story = {
+    args: {
+        text: lorem,
+        size: TextSize.L
     }
 }

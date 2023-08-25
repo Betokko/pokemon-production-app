@@ -1,9 +1,9 @@
 import { StoryObj } from '@storybook/react'
-import { ArticlesPage } from 'pages/ArticlesPage'
+import { PokemonListPage } from '../index'
 
 const meta = {
-    title: '/ArticlesPage',
-    component: ArticlesPage
+    title: 'pages/PokemonListPage',
+    component: PokemonListPage
 }
 
 export default meta

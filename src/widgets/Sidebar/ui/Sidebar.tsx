@@ -53,12 +53,10 @@ export const Sidebar = memo((props: SidebarProps) => {
                 </AppLink>
             )}
 
-            {isAuth && (
-                <AppLink to={'/articles'}>
-                    <Pokeball className={ clsx(s.linkIcon) }/>
-                    <div>{!collapsed && t('pokemons')}</div>
-                </AppLink>
-            )}
+            <AppLink to={'/pokemon'}>
+                <Pokeball className={ clsx(s.linkIcon) }/>
+                <div>{!collapsed && t('pokemon')}</div>
+            </AppLink>
 
         </div>
     )

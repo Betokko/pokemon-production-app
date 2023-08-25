@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import clsx from 'clsx'
 import s from './ProfileCard.module.scss'
-import { Text, TextAlign, ThemeText } from 'shared/ui/Text/ui/Text'
+import { Text, TextAlign, TextTheme } from 'shared/ui/Text/ui/Text'
 import { Input } from 'shared/ui/Input'
 import { IProfile } from '../model/types/profile'
 import { Loader } from 'shared/ui/Loader'
@@ -53,7 +53,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
             <div className={clsx([s.profileCard, s.error, className])}>
                 <Text
                     title={error}
-                    theme={ThemeText.ERROR}
+                    theme={TextTheme.ERROR}
                     align={TextAlign.CENTER}
                 />
 
