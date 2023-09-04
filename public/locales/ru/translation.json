@@ -23,5 +23,7 @@
     "city": "Город",
     "placeholder": "Аватар",
     "currency": "Валюта",
-    "pokemon": "Покемоны"
+    "pokemon": "Покемоны",
+    "comments": "Комментарии",
+    "no comments": "Комментарии отсутвствуют"
 }

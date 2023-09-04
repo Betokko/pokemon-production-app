@@ -6,14 +6,16 @@ import { AxiosInstance } from 'axios'
 import { To } from '@remix-run/router'
 import { NavigateOptions } from 'react-router/dist/lib/context'
 import { IPokemonSchema } from 'entities/Pokemon'
+import { IPokemonCommentsSchema } from 'pages/PokemonPage'
 
 export interface IStateSchema {
     user: IUserSchema
 
-    // async
+    // Асинхронные редюсеры
     login?: ILoginSchema
     profile?: IProfileSchema
     pokemon?: IPokemonSchema
+    pokemonComments?: IPokemonCommentsSchema
 }
 
 export type TStateSchemaKey = keyof IStateSchema

@@ -11,7 +11,6 @@ export const fetchPokemonById = createAsyncThunk<IPokemon, string, IThunkConfig<
             const res = await extra.api.get<IPokemon>(`/pokemonList/${pokemonId}`)
             return res.data
         } catch (e) {
-            console.error(e)
             return rejectWithValue(i18n.t('error'))
         }
     })

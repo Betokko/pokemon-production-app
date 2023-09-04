@@ -1,6 +1,7 @@
 export interface IUser {
     id: string
     username: string
+    placeholder?: string
 }
 
 export interface IUserSchema {

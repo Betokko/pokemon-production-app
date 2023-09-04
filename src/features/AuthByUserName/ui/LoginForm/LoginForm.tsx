@@ -9,8 +9,8 @@ import {
     getLoginIsLoading,
     getLoginPassword,
     getLoginUsername
-} from '../../model/selectors/selectLoginState'
-import { loginByUsername } from 'features/AuthByUserName/model/services/loginByUsername'
+} from '../../model/selector/selectLoginState'
+import { loginByUsername } from 'features/AuthByUserName/model/service/loginByUsername'
 import { Button, ThemeButton } from 'shared/ui/Button'
 import { Input } from 'shared/ui/Input'
 import { Loader } from 'shared/ui/Loader'

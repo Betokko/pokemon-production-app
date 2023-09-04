@@ -4,7 +4,7 @@ import { CSSProperties, SVGProps, useMemo, VFC } from 'react'
 
 interface PlaceholderProps {
     className?: string
-    src: string
+    src?: string
     size?: string
     alt?: string
 }
@@ -15,9 +15,10 @@ export const Placeholder = (props: PlaceholderProps) => {
     const styles = useMemo<CSSProperties>(() => {
         return {
             height: size,
-            width: size
+            width: size,
+            backgroundColor: src ? 'transparent' : 'var(--bg-inverted-color)'
         }
-    }, [size])
+    }, [size, src])
 
     return (
         <img
@@ -26,6 +27,5 @@ export const Placeholder = (props: PlaceholderProps) => {
             style={styles}
             className={clsx([s.placeholder, className])}
         />
-
     )
 }

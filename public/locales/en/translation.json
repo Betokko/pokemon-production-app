@@ -23,5 +23,7 @@
     "city": "City",
     "placeholder": "Placeholder",
     "currency": "Currency",
-    "pokemon": "Pokemon"
+    "pokemon": "Pokemon",
+    "comments": "Comments",
+    "no comments": "No comments"
 }

@@ -10,6 +10,6 @@
 
     .placeholder {
         margin: 0 auto;
-        box-shadow: 0.5rem 0.5rem 1rem 0 rgb(0 0 0 / 10%);
+        border: 1px solid var(--secondary-color);
     }
 }
