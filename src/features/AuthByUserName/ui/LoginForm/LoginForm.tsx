@@ -3,14 +3,14 @@ import { useTranslation } from 'react-i18next'
 import clsx from 'clsx'
 import s from './LoginForm.module.scss'
 import { useSelector } from 'react-redux'
-import { loginActions, loginReducer } from '../../model/slice/loginSlice'
+import { loginActions, loginReducer } from '../../model/slices/loginSlice'
 import {
     getLoginError,
     getLoginIsLoading,
     getLoginPassword,
     getLoginUsername
-} from '../../model/selector/selectLoginState'
-import { loginByUsername } from 'features/AuthByUserName/model/service/loginByUsername'
+} from '../../model/selectors/selectLoginState'
+import { loginByUsername } from 'features/AuthByUserName/model/services/loginByUsername'
 import { Button, ThemeButton } from 'shared/ui/Button'
 import { Input } from 'shared/ui/Input'
 import { Loader } from 'shared/ui/Loader'

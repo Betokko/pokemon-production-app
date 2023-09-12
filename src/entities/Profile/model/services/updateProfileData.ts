@@ -10,7 +10,7 @@ export const updateProfileData = createAsyncThunk<IProfile, void, IThunkConfig<s
         const { rejectWithValue, extra, getState } = thunkAPI
         const formData = getProfileForm(getState())
         try {
-            const res = await extra.api.put<IProfile>('/profile', formData)
+            const res = await extra.api.put<IProfile>(`/profile/${formData?.id ?? ''}`, formData)
             return res.data
         } catch (e) {
             console.error(e)

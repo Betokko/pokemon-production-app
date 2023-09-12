@@ -1,9 +1,9 @@
 import { createContext } from 'react'
 
 export enum Theme {
+    PIKACHU = 'pikachu_theme',
     LIGHT = 'light_theme',
     DARK = 'dark_theme',
-    PIKACHU = 'pikachu_theme'
 }
 
 export interface IThemeContextProps {

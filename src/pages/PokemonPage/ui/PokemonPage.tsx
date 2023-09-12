@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import clsx from 'clsx'
 import s from './PokemonPage.module.scss'
-import { memo, useEffect } from 'react'
+import { memo, useCallback, useEffect } from 'react'
 import { Pokemon } from 'entities/Pokemon'
 import { useParams } from 'react-router-dom'
 import { Text, TextSize } from 'shared/ui/Text/ui/Text'
@@ -12,6 +12,8 @@ import { useSelector } from 'react-redux'
 import { getPokemonCommentsIsLoading } from '../model/selector/pokemonCommentsSelector'
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch'
 import { fetchCommentsByPokemonId } from 'pages/PokemonPage/model/service/fetchCommentsByPokemonId'
+import { AddCommentForm } from 'features/AddCommentForm'
+import { addCommentForPokemon } from 'pages/PokemonPage/model/service/addCommentForPokemon'
 
 interface PokemonPageProps {
     className?: string
@@ -29,6 +31,10 @@ const PokemonPage = (props: PokemonPageProps) => {
     const comments = useSelector(getPokemonComments.selectAll)
     const commentsIsLoading = useSelector(getPokemonCommentsIsLoading)
 
+    const onSendComment = useCallback((text: string) => {
+        dispatch(addCommentForPokemon(text))
+    }, [dispatch])
+
     useEffect(() => {
         if (id) dispatch(fetchCommentsByPokemonId(id))
     }, [dispatch, id])
@@ -39,8 +45,9 @@ const PokemonPage = (props: PokemonPageProps) => {
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
             <div className={clsx([s.PokemonPage, className])}>
                 <Pokemon id={id} />
-                <div>
+                <div className={s.comments}>
                     <Text title={t('comments')} size={TextSize.L}/>
+                    <AddCommentForm onSendComment={onSendComment}/>
                     <CommentList
                         isLoading={commentsIsLoading}
                         comments={comments}

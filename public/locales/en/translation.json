@@ -25,5 +25,7 @@
     "currency": "Currency",
     "pokemon": "Pokemon",
     "comments": "Comments",
-    "no comments": "No comments"
+    "no comments": "No comments",
+    "enter the text of the comment": "Enter the text of the comment",
+    "send": "Send"
 }

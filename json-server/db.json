@@ -3,7 +3,10 @@
     {
       "id": "001",
       "name": "Бульбазавр",
-      "type": ["grass", "poison"],
+      "type": [
+        "grass",
+        "poison"
+      ],
       "img": "https://static.wikia.nocookie.net/pokemon/images/2/21/001Bulbasaur.png",
       "content": [
         {
@@ -51,7 +54,9 @@
     {
       "id": "004",
       "name": "Чармандер ",
-      "type": ["fire"],
+      "type": [
+        "fire"
+      ],
       "img": "https://static.wikia.nocookie.net/pokemon/images/7/73/004Charmander.png",
       "content": [
         {
@@ -130,6 +135,24 @@
       "text": "Charmander",
       "pokemonId": "004",
       "userId": "1"
+    },
+    {
+      "userId": 1,
+      "pokemonId": "004",
+      "text": "Hello world!",
+      "id": "Vil1r_F"
+    },
+    {
+      "userId": 1,
+      "pokemonId": "004",
+      "text": "lorem ipsum dolor",
+      "id": "uKTNQMn"
+    },
+    {
+      "userId": 1,
+      "pokemonId": "004",
+      "text": "Nice!",
+      "id": "uEuc3zz"
     }
   ],
   "users": [
@@ -155,14 +178,39 @@
       "placeholder": "https://archives.bulbagarden.net/media/upload/0/0d/Jessie_JN.png"
     }
   ],
-  "profile": {
-    "firstname": "Jesus",
-    "lastname": "Christ",
-    "age": 33,
-    "currency": "EUR",
-    "country": "Russia",
-    "city": "Nazareth",
-    "username": "Admin",
-    "placeholder": "https://m.media-amazon.com/images/M/MV5BMTcxMTQyMTIwNF5BMl5BanBnXkFtZTcwNzg5NzkyOA@@._V1_.jpg"
-  }
+  "profile": [
+    {
+      "id": 1,
+      "firstname": "Jesus",
+      "lastname": "Christ",
+      "age": 33,
+      "currency": "EUR",
+      "country": "Russia",
+      "city": "Nazareth",
+      "username": "Admin",
+      "placeholder": "https://m.media-amazon.com/images/M/MV5BMTcxMTQyMTIwNF5BMl5BanBnXkFtZTcwNzg5NzkyOA@@._V1_.jpg"
+    },
+    {
+      "id": 2,
+      "firstname": "Ash",
+      "lastname": "",
+      "age": 10,
+      "currency": "EUR",
+      "country": "Russia",
+      "city": "Palet City",
+      "username": "Ash",
+      "placeholder": "https://static.wikia.nocookie.net/pokemon-reset-bloodlines/images/0/07/ResetBloodlinesAshBeginning.png"
+    },
+    {
+      "id": 5,
+      "firstname": "Jessica",
+      "lastname": "",
+      "age": 18,
+      "currency": "EUR",
+      "country": "Russia",
+      "city": "Lumiose City",
+      "username": "Jessie",
+      "placeholder": "https://archives.bulbagarden.net/media/upload/0/0d/Jessie_JN.png"
+    }
+  ]
 }

@@ -7,6 +7,7 @@ import { To } from '@remix-run/router'
 import { NavigateOptions } from 'react-router/dist/lib/context'
 import { IPokemonSchema } from 'entities/Pokemon'
 import { IPokemonCommentsSchema } from 'pages/PokemonPage'
+import { IAddCommentFormSchema } from 'features/AddCommentForm'
 
 export interface IStateSchema {
     user: IUserSchema
@@ -16,6 +17,7 @@ export interface IStateSchema {
     profile?: IProfileSchema
     pokemon?: IPokemonSchema
     pokemonComments?: IPokemonCommentsSchema
+    addCommentForm?: IAddCommentFormSchema
 }
 
 export type TStateSchemaKey = keyof IStateSchema

@@ -13,8 +13,8 @@ export type TAppRouterProps = RouteProps & {
 export enum AppRoute {
     MAIN = 'main',
     ABOUT = 'about',
-    PROFILE_PAGE = 'profile',
-    POKEMON = 'pokemon',
+    PROFILE_PAGE = 'profile', // + id
+    POKEMON = 'pokemon', // + id
     // last
     NOT_FOUND = 'notFound',
 }
@@ -22,8 +22,8 @@ export enum AppRoute {
 export const RoutePath: Record<AppRoute, string> = {
     [AppRoute.MAIN]: '/',
     [AppRoute.ABOUT]: '/about',
-    [AppRoute.PROFILE_PAGE]: 'profile',
-    [AppRoute.POKEMON]: 'pokemon',
+    [AppRoute.PROFILE_PAGE]: '/profile',
+    [AppRoute.POKEMON]: '/pokemon',
     // last
     [AppRoute.NOT_FOUND]: '*'
 }
@@ -31,8 +31,8 @@ export const RoutePath: Record<AppRoute, string> = {
 export const routeConfig: TAppRouterProps[] = [
     { path: RoutePath.main, element: <MainPage /> },
     { path: RoutePath.about, element: <AboutPage /> },
-    { path: RoutePath.profile, element: <ProfilePage/>, authOnly: true },
     { path: RoutePath.pokemon, element: <PokemonListPage/> },
+    { path: `${RoutePath.profile}/:id`, element: <ProfilePage/>, authOnly: true },
     { path: `${RoutePath.pokemon}/:id`, element: <PokemonPage/> },
     // last
     { path: RoutePath.notFound, element: <NotFoundPage /> }

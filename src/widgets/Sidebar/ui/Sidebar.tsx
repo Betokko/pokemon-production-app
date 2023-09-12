@@ -7,10 +7,11 @@ import HomeIcon from 'shared/assets/icons/home_black_24dp.svg'
 import DescriptionIcon from 'shared/assets/icons/description_black_24dp.svg'
 import PersonIcon from 'shared/assets/icons/person_black_24dp.svg'
 import Pokeball from 'shared/assets/icons/pokeball_black_24dp.svg'
-import { AppLink } from 'shared/ui/AppLink/AppLink'
+import { AppLink } from 'shared/ui/AppLink/ui/AppLink'
 import { useTranslation } from 'react-i18next'
 import { useSelector } from 'react-redux'
 import { getUserAuthData } from 'entities/User'
+import { RoutePath } from 'app/providers/Router/lib/routeConfig'
 
 interface SidebarProps {
     className?: string
@@ -47,7 +48,7 @@ export const Sidebar = memo((props: SidebarProps) => {
             </AppLink>
 
             {isAuth && (
-                <AppLink to={'/profile'}>
+                <AppLink to={`${RoutePath.profile}/${isAuth.id}`}>
                     <PersonIcon className={ clsx(s.linkIcon) }/>
                     <div>{!collapsed && t('profile')}</div>
                 </AppLink>

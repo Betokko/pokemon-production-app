@@ -25,5 +25,7 @@
     "currency": "Валюта",
     "pokemon": "Покемоны",
     "comments": "Комментарии",
-    "no comments": "Комментарии отсутвствуют"
+    "no comments": "Комментарии отсутвствуют",
+    "enter the text of the comment": "Введите текст комментария",
+    "send": "Отправить"
 }

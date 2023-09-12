@@ -5,6 +5,8 @@ import { IComment } from '../../model/types/comment'
 import { Placeholder } from 'shared/ui/Placeholder'
 import { Text, TextSize } from 'shared/ui/Text/ui/Text'
 import { Skeleton } from 'shared/ui/Skeleton/Skeleton'
+import { AppLink } from 'shared/ui/AppLink'
+import { RoutePath } from 'app/providers/Router/lib/routeConfig'
 
 interface CommentCardProps {
     className?: string
@@ -27,14 +29,16 @@ export const CommentCard = memo((props: CommentCardProps) => {
         )
     }
 
+    if (!comment) return null
+
     return (
         <div className={clsx([s.CommentCard, className])}>
-            <div className={s.header}>
+            <AppLink className={s.header} to={`${RoutePath.profile}/${comment.user.id}`}>
                 {comment.user.placeholder &&
                     <Placeholder alt={comment.user.username} src={comment.user.placeholder} size={'4rem'} />
                 }
                 <Text title={comment.user.username} size={TextSize.L}/>
-            </div>
+            </AppLink>
             <Text text={comment.text}/>
         </div>
     )

@@ -15,6 +15,7 @@ import { useSelector } from 'react-redux'
 import { getProfileError, getProfileIsLoading } from 'entities/Profile/model/selectors/profileSelectors'
 import { ProfilePageHeader } from './ProfilePageHeader/ProfilePageHeader'
 import { Currency } from 'entities/Currency'
+import { useParams } from 'react-router-dom'
 
 const reducers: TReducersList = {
     profile: profileReducer
@@ -27,6 +28,7 @@ const ProfilePage = () => {
     const error = useSelector(getProfileError)
     const isLoading = useSelector(getProfileIsLoading)
     const readOnly = useSelector(getProfileReadOnly)
+    const { id } = useParams<{ id: string }>()
 
     const onChangeFirstname = useCallback((value?: string) => {
         dispatch(profileActions.updateProfile({ firstname: value }))
@@ -57,10 +59,8 @@ const ProfilePage = () => {
     }, [dispatch])
 
     useEffect(() => {
-        if (__PROJECT__ !== 'storybook') {
-            dispatch(fetchProfileData())
-        }
-    }, [dispatch])
+        if (id && __PROJECT__ !== 'storybook') dispatch(fetchProfileData(id))
+    }, [dispatch, id])
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>

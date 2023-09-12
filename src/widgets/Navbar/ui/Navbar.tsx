@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import s from './Navbar.module.scss'
-import { AppLink } from 'shared/ui/AppLink/AppLink'
+import { AppLink } from 'shared/ui/AppLink/ui/AppLink'
 import { ThemeSwitcher } from 'features/ThemeSwitcher'
 import { useTranslation } from 'react-i18next'
 import { LangSwitcher } from 'features/LangSwitcher/ui/LangSwitcher'
