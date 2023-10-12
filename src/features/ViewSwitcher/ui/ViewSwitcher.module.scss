@@ -1,0 +1,8 @@
+.viewSwitcher {
+    display: flex;
+    gap: 1rem;
+}
+
+.active {
+    fill: var(--secondary-color);
+}

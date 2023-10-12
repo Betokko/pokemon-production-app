@@ -6,6 +6,7 @@
     "something went wrong": "Что-то пошло не так.",
     "refresh page": "Обновить страницу",
     "sign in": "Войти",
+    "sign in without sign up": "Войти без регистрации",
     "sign up": "Зарегистрироваться",
     "sign out": "Выйти",
     "password": "Пароль",
@@ -27,5 +28,7 @@
     "comments": "Комментарии",
     "no comments": "Комментарии отсутвствуют",
     "enter the text of the comment": "Введите текст комментария",
-    "send": "Отправить"
+    "send": "Отправить",
+    "learn more": "Читать далее...",
+    "back": "Назад"
 }

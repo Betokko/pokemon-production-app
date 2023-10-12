@@ -1,0 +1,74 @@
+.LIST {
+    .card {
+        display: flex;
+        gap: 1rem;
+
+        .header {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .body {
+            display: flex;
+            gap: 1rem;
+
+            .img {
+                object-fit: cover;
+                width: 10rem;
+                height: 10rem;
+            }
+
+            .textBlock {
+                max-height: 10rem;
+                overflow-y: hidden;
+            }
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.GRID {
+    .card {
+        width: fit-content;
+        max-width: 12rem;
+        transition: transform 0.2s;
+
+        .imageWrapper {
+            position: relative;
+
+            .img {
+                object-fit: cover;
+                width: 10rem;
+                height: 10rem;
+            }
+
+            .id {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: opacity 0.2s;
+            }
+        }
+
+        .infoWrapper p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+
+            .id {
+                opacity: 1;
+            }
+        }
+    }
+}

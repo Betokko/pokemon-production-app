@@ -14,7 +14,7 @@ import { loginByUsername } from 'features/AuthByUserName/model/services/loginByU
 import { Button, ThemeButton } from 'shared/ui/Button'
 import { Input } from 'shared/ui/Input'
 import { Loader } from 'shared/ui/Loader'
-import { Text, TextTheme } from 'shared/ui/Text/ui/Text'
+import { Text, TextTheme } from 'shared/ui/Text'
 import { DynamicModuleLoader, TReducersList } from 'shared/lib/components/DynamicModuleLoader'
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch'
 
@@ -46,6 +46,10 @@ const LoginForm = memo(({ className }: LoginFormProps) => {
         await dispatch(loginByUsername({ username, password }))
     }, [dispatch, password, username])
 
+    const onClickLoginWithout = useCallback(async () => {
+        await dispatch(loginByUsername({ username: 'admin', password: 'admin' }))
+    }, [dispatch])
+
     return (
         <DynamicModuleLoader reducers={initialReducers}>
             {isLoading
@@ -64,14 +68,24 @@ const LoginForm = memo(({ className }: LoginFormProps) => {
                         onChange={onChangePassword}
                         label={t('password')}
                     />
-                    <Button
-                        theme={ThemeButton.PRIMARY}
-                        className={s.loginButton}
-                        onClick={onClickLoginSubmit}
-                        disabled={isLoading}
-                    >
-                        {t('sign in')}
-                    </Button>
+                    <div className={s.controls}>
+                        <Button
+                            theme={ThemeButton.PRIMARY}
+                            className={s.loginButton}
+                            onClick={onClickLoginSubmit}
+                            disabled={isLoading}
+                        >
+                            {t('sign in')}
+                        </Button>
+                        <Button
+                            theme={ThemeButton.OUTLINE}
+                            className={s.loginButton}
+                            onClick={onClickLoginWithout}
+                            disabled={isLoading}
+                        >
+                            {t('sign in without sign up')}
+                        </Button>
+                    </div>
                 </div>}
         </DynamicModuleLoader>
     )

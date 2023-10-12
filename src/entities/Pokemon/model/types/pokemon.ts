@@ -1,9 +1,16 @@
+import { IUser } from 'entities/User'
+
 export interface IPokemon {
     id: string
     name: string
     img: string
     content: IPokemonContent[]
     type: PokemonTypes[]
+}
+
+export enum PokemonView {
+    GRID = 'GRID',
+    LIST = 'LIST'
 }
 
 export interface IPokemonContent {

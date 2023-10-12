@@ -29,11 +29,30 @@ export const RoutePath: Record<AppRoute, string> = {
 }
 
 export const routeConfig: TAppRouterProps[] = [
-    { path: RoutePath.main, element: <MainPage /> },
-    { path: RoutePath.about, element: <AboutPage /> },
-    { path: RoutePath.pokemon, element: <PokemonListPage/> },
-    { path: `${RoutePath.profile}/:id`, element: <ProfilePage/>, authOnly: true },
-    { path: `${RoutePath.pokemon}/:id`, element: <PokemonPage/> },
+    {
+        path: RoutePath.main,
+        element: <MainPage />
+    },
+    {
+        path: RoutePath.about,
+        element: <AboutPage />
+    },
+    {
+        path: RoutePath.pokemon,
+        element: <PokemonListPage/>
+    },
+    {
+        path: `${RoutePath.profile}/:id`,
+        element: <ProfilePage/>,
+        authOnly: true
+    },
+    {
+        path: `${RoutePath.pokemon}/:id`,
+        element: <PokemonPage/>
+    },
     // last
-    { path: RoutePath.notFound, element: <NotFoundPage /> }
+    {
+        path: RoutePath.notFound,
+        element: <NotFoundPage />
+    }
 ]

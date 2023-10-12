@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import clsx from 'clsx'
 import s from './ProfilePageHeader.module.scss'
-import { Text } from 'shared/ui/Text/ui/Text'
+import { Text } from 'shared/ui/Text'
 import { Button, ThemeButton } from 'shared/ui/Button'
 import { useSelector } from 'react-redux'
 import { getProfileData, getProfileReadOnly, profileActions, updateProfileData } from 'entities/Profile'
@@ -22,6 +22,7 @@ export const ProfilePageHeader = (props: ProfilePageHeaderProps) => {
     const authData = useSelector(getUserAuthData)
     const profileData = useSelector(getProfileData)
     const canEdit = authData?.id === profileData?.id
+    const isAdmin = profileData?.id === 1
 
     const onEdit = useCallback(() => {
         dispatch(profileActions.setReadOnly(false))
@@ -41,6 +42,7 @@ export const ProfilePageHeader = (props: ProfilePageHeaderProps) => {
                     ? (<Button
                         theme={ThemeButton.OUTLINE}
                         onClick={onEdit}
+                        disabled={isAdmin}
                     >
                         {t('edit')}
                     </Button>)

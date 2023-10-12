@@ -6,6 +6,7 @@
     "something went wrong": "Something went wrong.",
     "refresh page": "Refresh page",
     "sign in": "Sign in",
+    "sign in without sign up": "Sign in without sign up",
     "sign up": "Sign up",
     "sign out": "Sign out",
     "password": "Password",
@@ -27,5 +28,7 @@
     "comments": "Comments",
     "no comments": "No comments",
     "enter the text of the comment": "Enter the text of the comment",
-    "send": "Send"
+    "send": "Send",
+    "learn more": "Learn more...",
+    "back": "Back"
 }

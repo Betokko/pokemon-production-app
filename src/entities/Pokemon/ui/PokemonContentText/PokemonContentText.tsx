@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import s from './PokemonContentText.module.scss'
 import { memo } from 'react'
 import { IPokemonContent } from 'entities/Pokemon/model/types/pokemon'
-import { Text, TextTheme } from 'shared/ui/Text/ui/Text'
+import { Text, TextTheme } from 'shared/ui/Text'
 
 interface PokemonContentTextProps {
     className?: string

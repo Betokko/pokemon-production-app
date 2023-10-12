@@ -22,7 +22,7 @@ export const Sidebar = memo((props: SidebarProps) => {
     const { t } = useTranslation()
     const [collapsed, setCollapsed] = useState(true)
     const toggle = () => { setCollapsed(!collapsed) }
-    const isAuth = useSelector(getUserAuthData)
+    const authData = useSelector(getUserAuthData)
 
     return (
         <div
@@ -47,8 +47,8 @@ export const Sidebar = memo((props: SidebarProps) => {
                 <div>{!collapsed && t('about')}</div>
             </AppLink>
 
-            {isAuth && (
-                <AppLink to={`${RoutePath.profile}/${isAuth.id}`}>
+            {authData && (
+                <AppLink to={`${RoutePath.profile}/${authData.id}`}>
                     <PersonIcon className={ clsx(s.linkIcon) }/>
                     <div>{!collapsed && t('profile')}</div>
                 </AppLink>

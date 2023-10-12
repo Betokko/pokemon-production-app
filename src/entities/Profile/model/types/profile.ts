@@ -1,7 +1,7 @@
 import { Currency } from 'entities/Currency/model/types/currency'
 
 export interface IProfile {
-    'id'?: string
+    'id'?: string | number
     'firstname'?: string
     'lastname'?: string
     'age'?: number

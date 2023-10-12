@@ -2,7 +2,7 @@ import { memo } from 'react'
 import clsx from 'clsx'
 import s from './CommentList.module.scss'
 import { IComment } from 'entities/Comment'
-import { Text } from 'shared/ui/Text/ui/Text'
+import { Text } from 'shared/ui/Text'
 import { useTranslation } from 'react-i18next'
 import { CommentCard } from '../CommentCard/CommentCard'
 

@@ -8,6 +8,7 @@ import { NavigateOptions } from 'react-router/dist/lib/context'
 import { IPokemonSchema } from 'entities/Pokemon'
 import { IPokemonCommentsSchema } from 'pages/PokemonPage'
 import { IAddCommentFormSchema } from 'features/AddCommentForm'
+import { IPokemonListSchema } from 'pages/PokemonListPage'
 
 export interface IStateSchema {
     user: IUserSchema
@@ -18,6 +19,7 @@ export interface IStateSchema {
     pokemon?: IPokemonSchema
     pokemonComments?: IPokemonCommentsSchema
     addCommentForm?: IAddCommentFormSchema
+    pokemonList?: IPokemonListSchema
 }
 
 export type TStateSchemaKey = keyof IStateSchema

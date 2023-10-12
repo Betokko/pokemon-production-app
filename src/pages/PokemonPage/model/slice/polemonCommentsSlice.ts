@@ -2,8 +2,6 @@ import { createEntityAdapter, createSlice, PayloadAction } from '@reduxjs/toolki
 import { IComment } from 'entities/Comment'
 import { IStateSchema } from 'app/providers/StoreProvider'
 import { IPokemonCommentsSchema } from '../types/pokemonCommentsSchema'
-import { fetchPokemonById } from 'entities/Pokemon/model/services/fetchPokemonById'
-import { IPokemon } from 'entities/Pokemon'
 import { fetchCommentsByPokemonId } from 'pages/PokemonPage/model/service/fetchCommentsByPokemonId'
 
 const commentsAdapter = createEntityAdapter<IComment>({

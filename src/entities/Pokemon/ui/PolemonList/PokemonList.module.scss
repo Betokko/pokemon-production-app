@@ -1,0 +1,14 @@
+.PokemonList {
+    overflow: hidden;
+    display: flex;
+}
+
+.GRID {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.LIST {
+    flex-direction: column;
+    gap: 1rem;
+}
