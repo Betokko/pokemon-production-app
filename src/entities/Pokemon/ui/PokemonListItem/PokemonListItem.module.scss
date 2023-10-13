@@ -2,6 +2,7 @@
     .card {
         display: flex;
         gap: 1rem;
+        cursor: default;
 
         .header {
             display: flex;
@@ -35,8 +36,10 @@
 
 .GRID {
     .card {
-        width: fit-content;
-        max-width: 12rem;
+        display: flex;
+        align-items: center;
+        min-width: fit-content;
+        width: 20rem;
         transition: transform 0.2s;
 
         .imageWrapper {

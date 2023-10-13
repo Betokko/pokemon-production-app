@@ -25,7 +25,7 @@ export const Sidebar = memo((props: SidebarProps) => {
     const authData = useSelector(getUserAuthData)
 
     return (
-        <div
+        <aside
             className={clsx([s.sidebar, collapsed && s.sidebarCollapsed, className])}
             data-testid='sidebar'
         >
@@ -59,6 +59,6 @@ export const Sidebar = memo((props: SidebarProps) => {
                 <div>{!collapsed && t('pokemon')}</div>
             </AppLink>
 
-        </div>
+        </aside>
     )
 })

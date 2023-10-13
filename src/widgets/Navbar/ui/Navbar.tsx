@@ -30,7 +30,7 @@ export const Navbar = memo((props: NavbarProps) => {
 
     if (authData) {
         return (
-            <div className={clsx([s.navbar, className])}>
+            <header className={clsx([s.navbar, className])}>
                 <AppLink to={'/'} className={s.logo}>
                     <img src={logo} />
                 </AppLink>
@@ -43,12 +43,12 @@ export const Navbar = memo((props: NavbarProps) => {
                     <LangSwitcher/>
                     <ThemeSwitcher/>
                 </div>
-            </div>
+            </header>
         )
     }
 
     return (
-        <div className={clsx([s.navbar, className])}>
+        <header className={clsx([s.navbar, className])}>
             <AppLink to={'/'} className={s.logo}>
                 <img src={logo} />
             </AppLink>
@@ -68,6 +68,6 @@ export const Navbar = memo((props: NavbarProps) => {
                     onClose={onCloseModal}
                 />
             )}
-        </div>
+        </header>
     )
 })

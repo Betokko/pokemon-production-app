@@ -52,6 +52,40 @@
       ]
     },
     {
+      "id": "002",
+      "name": "Ивизавр",
+      "type": ["grass", "poison"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/7/73/002Ivysaur.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Ивизавр - это среднего размера покемон с большими листьями на спине.",
+            "У него есть большие красные глаза и острые клыки."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "003",
+      "name": "Венузавр",
+      "type": ["grass", "poison"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/a/ae/003Venusaur.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Венузавр - это крупный двуногий покемон с большими цветками на спине.",
+            "У него острые зубы и глаза красного цвета."
+          ]
+        }
+      ]
+    },
+    {
       "id": "004",
       "name": "Чармандер ",
       "type": [
@@ -111,22 +145,64 @@
       ]
     },
     {
+      "id": "005",
+      "name": "Чармелеон",
+      "type": ["fire"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/4/4a/005Charmeleon.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Чармелеон — двуногое пресмыкающееся.",
+            " У него тёмно-красная чешуя, намного темнее, чем у чармандера. Сзади у него длинный хвост, на конце которого постоянно горит пламя. На передних и задних лапах у чармелеона по три больших белых когтя."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "006",
+      "name": "Чаризард",
+      "type": ["fire"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/7/7e/006Charizard.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Чаризард значительно отличается от своих предэволюций. У него появились крылья, благодаря которым он может свободно летать. Также у Чаризарда вытянулась шея и удлинился хвост. ",
+            "Теперь у него более вытянутая морда. На голове два рога, плюс по рогу на каждом крыле. На лапах по три когтя. Внешне Чаризард очень похож на драконов из западной мифологии."
+          ]
+        }
+      ]
+    },
+    {
       "id": "007",
       "name": "Сквиртл",
-      "type": ["water"],
+      "type": [
+        "water"
+      ],
       "img": "https://static.wikia.nocookie.net/pokemon/images/3/39/007Squirtle.png",
       "content": [
         {
           "id": "1",
           "type": "text",
           "title": "Внешность",
-          "paragraphs": ["Сквиртл - это маленькая черепаха с синей раковиной на спине.", "Он имеет хвост и большие глаза."]
+          "paragraphs": [
+            "Сквиртл - это маленькая черепаха с синей раковиной на спине.",
+            "Он имеет хвост и большие глаза."
+          ]
         },
         {
           "id": "2",
           "type": "text",
           "title": "Способности",
-          "paragraphs": ["Сквиртл может использовать водные атаки, выбрасывая воду из своей раковины.", "Он умеет плавать очень хорошо."]
+          "paragraphs": [
+            "Сквиртл может использовать водные атаки, выбрасывая воду из своей раковины.",
+            "Он умеет плавать очень хорошо."
+          ]
         },
         {
           "id": "3",
@@ -137,22 +213,64 @@
       ]
     },
     {
+      "id": "008",
+      "name": "Вартотл",
+      "type": ["water"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/0/0c/008Wartortle.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Вартотл - это покемон со съемной оболочкой и водяными пушками на спине.",
+            "У него острые когти и синяя шкура."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "009",
+      "name": "Бластойз",
+      "type": ["water"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/0/02/009Blastoise.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Бластойз - это крупный покемон с водяными пушками на спине.",
+            "У него синяя шкура и острые клыки."
+          ]
+        }
+      ]
+    },
+    {
       "id": "010",
       "name": "Катерпи",
-      "type": ["bug"],
+      "type": [
+        "bug"
+      ],
       "img": "https://static.wikia.nocookie.net/pokemon/images/5/5d/010Caterpie.png",
       "content": [
         {
           "id": "1",
           "type": "text",
           "title": "Внешность",
-          "paragraphs": ["Катерпи - это маленький покемон с зеленым телом и антеннами.", "У него есть маленькие ножки."]
+          "paragraphs": [
+            "Катерпи - это маленький покемон с зеленым телом и антеннами.",
+            "У него есть маленькие ножки."
+          ]
         },
         {
           "id": "2",
           "type": "text",
           "title": "Способности",
-          "paragraphs": ["Катерпи специализируется на баг-атаках.", "Он может использовать паучьи сети и ядовитые укусы."]
+          "paragraphs": [
+            "Катерпи специализируется на баг-атаках.",
+            "Он может использовать паучьи сети и ядовитые укусы."
+          ]
         },
         {
           "id": "3",
@@ -163,22 +281,64 @@
       ]
     },
     {
+      "id": "011",
+      "name": "Метапод",
+      "type": ["bug"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/c/cd/011Metapod.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Метапод - это покемон, похожий на кокон.",
+            "У него жесткий панцирь и неподвижный."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "012",
+      "name": "Баттерфри",
+      "type": ["bug", "flying"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/d/d1/012Butterfree.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Баттерфри - это покемон с большими крыльями и цветными узорами.",
+            "У него антенны и большие глаза."
+          ]
+        }
+      ]
+    },
+    {
       "id": "013",
       "name": "Эканс",
-      "type": ["poison"],
+      "type": [
+        "poison"
+      ],
       "img": "https://static.wikia.nocookie.net/pokemon/images/f/fa/023Ekans.png",
       "content": [
         {
           "id": "1",
           "type": "text",
           "title": "Внешность",
-          "paragraphs": ["Эканс - это длинная змея с фиолетовой шкурой и желтой кожей на голове.", "У нее есть зловещие красные глаза."]
+          "paragraphs": [
+            "Эканс - это длинная змея с фиолетовой шкурой и желтой кожей на голове.",
+            "У нее есть зловещие красные глаза."
+          ]
         },
         {
           "id": "2",
           "type": "text",
           "title": "Способности",
-          "paragraphs": ["Эканс обладает ядовитым укусом и может свернуться в кольцо.", "Она использует удавческие способности в бою."]
+          "paragraphs": [
+            "Эканс обладает ядовитым укусом и может свернуться в кольцо.",
+            "Она использует удавческие способности в бою."
+          ]
         },
         {
           "id": "3",
@@ -189,22 +349,65 @@
       ]
     },
     {
+      "id": "014",
+      "name": "Какуна",
+      "type": ["bug", "poison"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/f/f0/014Kakuna.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Какуна - это покемон, похожий на кокон, с твердой оболочкой.",
+            "У него острые шипы и коричневая шкура."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "015",
+      "name": "Бидрилл",
+      "type": ["bug", "poison"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/6/61/015Beedrill.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Бидрилл - это крупный покемон с острыми шипами и желтой шкурой.",
+            "У него большие крылья и красные глаза."
+          ]
+        }
+      ]
+    },
+    {
       "id": "016",
       "name": "Пиджи",
-      "type": ["normal", "flying"],
+      "type": [
+        "normal",
+        "flying"
+      ],
       "img": "https://static.wikia.nocookie.net/pokemon/images/5/55/016Pidgey.png",
       "content": [
         {
           "id": "1",
           "type": "text",
           "title": "Внешность",
-          "paragraphs": ["Пиджи - это маленькая птица с коричневым оперением.", "У него есть крылья и клюв."]
+          "paragraphs": [
+            "Пиджи - это маленькая птица с коричневым оперением.",
+            "У него есть крылья и клюв."
+          ]
         },
         {
           "id": "2",
           "type": "text",
           "title": "Способности",
-          "paragraphs": ["Пиджи обладает способностью летать и атаковать врагов с помощью своих крыльев.", "Он также может издавать пискливые звуки."]
+          "paragraphs": [
+            "Пиджи обладает способностью летать и атаковать врагов с помощью своих крыльев.",
+            "Он также может издавать пискливые звуки."
+          ]
         },
         {
           "id": "3",
@@ -215,22 +418,47 @@
       ]
     },
     {
+      "id": "017",
+      "name": "Пиджеотто",
+      "type": ["normal", "flying"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/7/7a/017Pidgeotto.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Пиджеотто — крупный, хищный покемон-птица. Хотя основной цвет этого покемона коричневый как и у пиджи, оперение его гораздо сложнее. ",
+            "У пиджеотто просто великолепное зрение. С высоты своего птичьего полёта он может увидеть среди листвы даже маленькую дичь и внимательно следить за всеми её передвижениями."
+          ]
+        }
+      ]
+    },
+    {
       "id": "019",
       "name": "Раттата",
-      "type": ["normal"],
+      "type": [
+        "normal"
+      ],
       "img": "https://static.wikia.nocookie.net/pokemon/images/4/46/019Rattata.png",
       "content": [
         {
           "id": "1",
           "type": "text",
           "title": "Внешность",
-          "paragraphs": ["Раттата - это маленькая мышь с коричневой шерстью.", "У нее острые зубы."]
+          "paragraphs": [
+            "Раттата - это маленькая мышь с коричневой шерстью.",
+            "У нее острые зубы."
+          ]
         },
         {
           "id": "2",
           "type": "text",
           "title": "Способности",
-          "paragraphs": ["Раттата быстрая и агрессивная мышь.", "Она может использовать навыки копания и атаковать с помощью своих зубов."]
+          "paragraphs": [
+            "Раттата быстрая и агрессивная мышь.",
+            "Она может использовать навыки копания и атаковать с помощью своих зубов."
+          ]
         },
         {
           "id": "3",
@@ -243,26 +471,134 @@
     {
       "id": "025",
       "name": "Пикачу",
-      "type": ["electric"],
+      "type": [
+        "electric"
+      ],
       "img": "https://static.wikia.nocookie.net/pokemon/images/0/0d/025Pikachu.png",
       "content": [
         {
           "id": "1",
           "type": "text",
           "title": "Внешность",
-          "paragraphs": ["Пикачу - это маленькое желтое покемон с мордочкой в форме моркови.", "У него есть молниевидный хвост."]
+          "paragraphs": [
+            "Пикачу - это маленькое желтое покемон с мордочкой в форме моркови.",
+            "У него есть молниевидный хвост."
+          ]
         },
         {
           "id": "2",
           "type": "text",
           "title": "Способности",
-          "paragraphs": ["Пикачу может генерировать и контролировать электричество.", "Он использует это для своих электрических атак."]
+          "paragraphs": [
+            "Пикачу может генерировать и контролировать электричество.",
+            "Он использует это для своих электрических атак."
+          ]
         },
         {
           "id": "3",
           "type": "img",
           "title": "Пикачу в бою",
           "src": "https://www.kinopoisk.ru/14CQ9h250/229f7dlUaJbl/a84cujkVdn30PdPaD4tjFDohrj0SVWCge9xJ7G9fCRzNHiMs-qpejt8Bgyd_rffl1aFFKuRRksqiv65dlcjXxWrrGN4NlfZ8lewTisrrFxDv4b8dF7BU5S45nA9treuf3lgBDpnpiL8-oIMy2ghyMUAEkO8FMPasYW7J7SOKprfL_I3J7sX0HHD-s4gum_PQyhCM2nD384crDXnN3BzpXs1IsR8Ymdgc7zMEQQmIU9ATlhJfQVF3TwKI6k_QexbHyj68G_9m1q6TngOKLqlwo4nTHduTVcLmWB2JTL8-yL0OuBEc-xg7_s3D57F6-7LwIccTf4Py54yC2ApOIzgkFekuv_vthXVuEc0SuU9b86J4sx2KQnUAhSlfq67MDYovLUmyTol6aQ4PcnVxyRrR0CJXQ4zzsXWtoYnbbIJpxpcIHZ87HlQmbVIvM0mvK5PgWnFuOcE2MvUpf8leLI_JbP9Z8I-bakrdTPPkUxsLsrIRl3Gu0FOFzsK6mO7gG_d1qN9_CV-3dg-BfSE4XqiysbpBzlujtJLG6V_53LyNOg1vGlJvCQsoft0hBLNL64NBYfThnXMzNzyAONsNUFmkp_perNl_17bccmxRCN070gG4k187gjRDx5vuu1zMDajPHfmTPtnLuN89oHajWFuCIzLE8NyxQ-RcEljqTSIphAYY3F3prGUEbZCfEsmv6wJzyVMdqXM3o8aJzuqsXg8JfG9Z475qCFisnwCHMCkLotIDVoD94PPEn0MYqU2wehb3OM-M-93m5r6gvyKZ7plAc_hBbtthZhOW2b4J7n3MiS-uuOLtahk53D8Tx5K52ZLxcacSvRBTJY3AiYh_87q0tOrPfdotlje9wM4ym75ZEgCpQd4qYYfi1EkOSmxsD8vu7uoBTjsKCd4dcvbiCtuTQrPlQW9g4uU8oljZnRLplSdYH68rrzWWvOG9Y_r8u4Cj-kN_OEGmc2W7TXoe_i8LPe0akqxJKBsszzLU4Lh4YpJjZ1JOgqCm_fGaet8ACjTVOByOy5_nBB9gfBJYztois4nTrBkiFGOnCP4bT6x_yu6tmDLvKqiK7r-QZ-LZuADiscZDvhEwx6_TOgmcABmk5kreXWv9lpVvYE5zus6Z8DL4M84o4zYhBkkfmV2PP8qe3sgSzLo4avy8oYawWcjA42KEMc7gkEef8CoZbbBqR0bp3t-ojZUFnJHvAur_e4Pg6kBsG0LnUWbazmg8fx04zK3YsQwZeTncbQPl4rrpE0BjxODPkQGFj4B6Kv7BueeUG_wuuY0G9N6BX2K4vfkiMgoDz2tytZE3C7zqngwMmPyveYJsGLtI3o8xZnLq6OGxYmbhv5Nzl36CCfntYauUlfsOf1hOxMeeck3QyKzosvJ6sn4bIIaRJ4ksmW7-7amfzIggDyjbWdzMgaXA2LiicMJEw40jMRTPg4gJT1O55wYLLCzbf1YmLgGNMJj8mWByaZN_auO2MQYqbhluPS3Y_--asA7bO6guDQK2svrpkLCiZQLNUfEmffCJ-T0iu_S3SQ7-Cc2k5V-T7rEI_fkiwYiBnjvRpbFkO345jawcaU-Pa4LNiLuobt3ytsPL2gCxwIVTzUBRBW9iyWtPskoGt-uvHIn899Rcod6RmD6Z0GDL8cwY0QSQpCh86G-Obvl93Roi7VrZK05-ozZCeOpTUmOXUT-RQYa_8GlLLJP6xNXIXK_IjUVGrWBsIZqd29OSWgD-6NGmUycoLHssvzzKDa2b0s84C5ktTNB2gDpb8nKT1iMf8aFkb3H66pzQucfnmk-PSgxnxg7QPCD73vmy44ninGrjpFGGOg4J3j39qb0em5OtG2pZDvxTB6EpqTJRUmeSvaBzt2_y-jvtgukkBmouj4tMpsYPQY6zuczJUgAr0o0K00USlTm_yS78jRqtbYtwninJio5u8lbSmxgB0VBGsR0zUFZtI6hJr0E6F7QYnW47jackLGKesuh-S6JSe6C86fKnYPT7frs9n8xbz36qkOxr6AhtPWME8vjKMhMAlPOt8fPlfoOa-K8jy_a3uf8t2m-HlV6QXAM5_MmhsGuC3VmjVDFGel56Tqz-265e2-NcmThJLu6xRRDoiINjAJUCvOMzpv6CabuNEam3pZu-79ttR4Sds40xCbyYEgH4k21IQ3Zy9np8SF4ubRrNXypDvQiLeTyNMaUCS4jykBClAv2DkMffwZtLzrK6RTe4_S9ILyb0nrLNM0jMafJxydKs63JksRc5DOvOjq8IvF9qskyqiEpOLaCFUEorwKKCNxNME6CVH8H6WW2QOgX3acyfWnzF522Rz8KIHTgjgXtjLSkANqGH6n2Lf49-eB5_eCD8KymJHq9jRcK4SnGhQEbR7zGz961yKet_UDulBtguHUveZRTM099y6p2L0mNbsK4Yo0ZApjh-qcxdXpls_4jDPunrS9_PsIdzaasT4BDHYOyi8Rb_gzm7LsAp1gcoXW0KPOQk7ULswLt_S8Kh-GDta6K1gHeZDLieTK8pXI6bYA4aizrMLqK1MtjJ4rIB5WHMkXEXb2Pa-W4jG5bUeF0_2b02p32S_SJJbqhg4IowvjvRdpH3KA9ITayPOW_fGrJ9iXmq7P1BNtCrGEPz0ldD_hMBdu_gGHtfEikGJZqdXehM5od-AK7C6szLICKb0O0b80fhZSvt-z4Ob3gNbAvjD0toW08N4vUCOkjzsdJ0kU2hQEev8jnJjbI5lcXr_F9LT7b2juBusEm_WhPCu5FMKzFVokQbTvtfr115_H96cuw62Fvfb3HU8xvo8EBgBlE_oeMEb0DL2t3wu_WWCEwd280Xt36wvtGofKigA8pAnjjyBjMXi_3Yrg0ea83e6eFeO4oJTr9zp1E7m6BC8OUDr8ES9czRqhu9Utm1ZRu87gpNR1Qv0Myg6A_bUIPpg6-pwocC9fke-Y4er4tcnLgQTKg7eJwfcPfDOhvigQP0MJzggrTvQ"
+        }
+      ]
+    },
+    {
+      "id": "033",
+      "name": "Нидорино",
+      "type": ["poison"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/9/9f/033Nidorino.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Нидорино — светло-фиолетовый четвероногий покемон, внешне напоминающий кролика, как и его пре-эволюция, только выглядит он более агрессивно. У него есть несколько более темных фиолетовых пятен по всему телу. У него большие колючие уши с бирюзовыми внутренностями, узкие черные глаза и длинная морда с двумя острыми зубами, выступающими из верхней челюсти. На спине у Нидорино гребень ядовитых шипов, а на лбу длинный заостренный рог. На его коротких лапах по три когтя на каждой ступне. Нидорино — исключительно мужской вид."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "034",
+      "name": "Нидокинг",
+      "type": ["poison", "ground"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/c/c6/034Nidoking.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Нидокинг — большой мощный двуногий покемон фиолетового цвета. У него очень большие рога и уши. Так же имеет большие когти — по одному на нижних конечностях и по три на верхних."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "035",
+      "name": "Клефэйри",
+      "type": ["fairy"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/f/f4/035Clefairy.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Клефэйри - это нежный покемон с большими ушами и светлой шерстью.",
+            "У него большие глаза и крылья."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "037",
+      "name": "Вульпикс",
+      "type": ["fire"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/6/60/037Vulpix.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Вульпикс - это маленький лисенок с оранжевой шерстью и хвостом с шести хвостиками.",
+            "У нее красные глаза."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "039",
+      "name": "Джигглипафф",
+      "type": ["normal", "fairy"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/3/3e/039Jigglypuff.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Джигглипафф - это пушистый розовый покемон с большими глазами и мелодичным пением.",
+            "У него короткие ножки."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "040",
+      "name": "Вигглитафф",
+      "type": ["normal", "fairy"],
+      "img": "https://static.wikia.nocookie.net/pokemon/images/9/92/040Wigglytuff.png",
+      "content": [
+        {
+          "id": "1",
+          "type": "text",
+          "title": "Внешность",
+          "paragraphs": [
+            "Вигглитафф - это крупный покемон с пушистой шерстью и розовым цветом.",
+            "У него есть большие глаза и короткие ножки."
+          ]
         }
       ]
     }
@@ -309,6 +645,12 @@
       "pokemonId": "004",
       "text": "Nice!",
       "id": "uEuc3zz"
+    },
+    {
+      "userId": 2,
+      "pokemonId": "025",
+      "text": "I love pikachu!",
+      "id": "jMoeWtR"
     }
   ],
   "users": [

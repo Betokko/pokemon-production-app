@@ -19,21 +19,20 @@ export const PokemonList = memo((props: PokemonListProps) => {
 
     const renderPokemon = (pokemon: IPokemon) => <PokemonListItem pokemon={pokemon} view={view} key={pokemon.id}/>
 
-    if (isLoading) {
-        return (
-            <div className={clsx([s.PokemonList, s[view], className])}>
-                {new Array(view === PokemonView.LIST ? 2 : 16)
-                    .fill(null)
-                    .map((_, i) => <PokemonListItemSkeleton view={view} key={i} />)}
-            </div>
-        )
-    }
+    const renderSkeleton = (view: PokemonView) => (
+        <>
+            {new Array(view === PokemonView.LIST ? 2 : 10)
+                .fill(null)
+                .map((_, i) => <PokemonListItemSkeleton view={view} key={i} />)}
+        </>
+    )
 
     return (
         <div className={clsx([s.PokemonList, s[view], className])}>
             {pokemones.length > 0
                 ? pokemones.map(pokemon => renderPokemon(pokemon))
                 : null}
+            {isLoading && renderSkeleton(view)}
         </div>
     )
 })

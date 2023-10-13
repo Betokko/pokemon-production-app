@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react'
 import { PokemonContentText } from './PokemonContentText'
-import { ThemeButton } from 'shared/ui/Button'
 
 const meta = {
     title: 'entities/PokemonContentText',

@@ -20,15 +20,22 @@ const pokemonListSlice = createSlice({
         error: undefined,
         ids: [],
         entities: {},
-        view: PokemonView.GRID
+        view: PokemonView.GRID,
+        page: 1,
+        hasMore: true
     }),
     reducers: {
         setView: (state, { payload }: PayloadAction<PokemonView>) => {
             state.view = payload
             localStorage.setItem(POKEMON_LIST_VIEW_LOCALSTORAGE_KEY, payload)
         },
+        setPage: (state, { payload }: PayloadAction<number>) => {
+            state.page = payload
+        },
         initState: (state) => {
-            state.view = localStorage.getItem('pokemon_list_view') as PokemonView
+            const view = localStorage.getItem('pokemon_list_view') as PokemonView
+            state.view = view
+            state.limit = view === PokemonView.LIST ? 2 : 10
         }
     },
     extraReducers: builder => {
@@ -38,7 +45,8 @@ const pokemonListSlice = createSlice({
             })
             .addCase(fetchPokemonList.fulfilled, (state, { payload }: PayloadAction<IPokemon[]>) => {
                 state.isLoading = false
-                pokemonListAdapter.setAll(state, payload)
+                pokemonListAdapter.addMany(state, payload)
+                state.hasMore = payload.length > 0
             })
             .addCase(fetchPokemonList.rejected, (state, { payload }) => {
                 state.isLoading = false

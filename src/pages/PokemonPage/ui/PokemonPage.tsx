@@ -17,6 +17,7 @@ import { addCommentForPokemon } from 'pages/PokemonPage/model/service/addComment
 import { Button, ThemeButton } from 'shared/ui/Button'
 import { RoutePath } from 'app/providers/Router/lib/routeConfig'
 import BackIcon from 'shared/assets/icons/arrow_back_black_24dp.svg'
+import { Page } from 'shared/Page/Page'
 
 interface PokemonPageProps {
     className?: string
@@ -45,11 +46,11 @@ const PokemonPage = (props: PokemonPageProps) => {
         if (id) dispatch(fetchCommentsByPokemonId(id))
     }, [dispatch, id])
 
-    if (!id) return <div>{t('error')}</div>
+    if (!id) return <Page>{t('error')}</Page>
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-            <div className={clsx([s.PokemonPage, className])}>
+            <Page className={clsx([s.PokemonPage, className])}>
                 <Button onClick={onBackToPokemonList} theme={ThemeButton.OUTLINE}>
                     <BackIcon fill={'var(--primary-color)'} height='16px' width='16px' viewBox='0 0 32 24' />
                     {t('back')}
@@ -63,7 +64,7 @@ const PokemonPage = (props: PokemonPageProps) => {
                         comments={comments}
                     />
                 </div>
-            </div>
+            </Page>
         </DynamicModuleLoader>
     )
 }

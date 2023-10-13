@@ -1,11 +1,12 @@
 import { useTranslation } from 'react-i18next'
+import { Page } from 'shared/Page/Page'
 
 const MainPage = () => {
     const { t } = useTranslation()
     return (
-        <div>
+        <Page>
             {t('main')}
-        </div>
+        </Page>
     )
 }
 

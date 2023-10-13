@@ -20,10 +20,3 @@
 .content {
     display: flex;
 }
-
-.page-wrapper {
-    width: 100%;
-    padding: var(--inner-padding);
-    height: calc(100vh - var(--navbar-height));
-    overflow: auto;
-}

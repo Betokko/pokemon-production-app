@@ -16,6 +16,7 @@ import { getProfileError, getProfileIsLoading } from 'entities/Profile/model/sel
 import { ProfilePageHeader } from './ProfilePageHeader/ProfilePageHeader'
 import { Currency } from 'entities/Currency'
 import { useParams } from 'react-router-dom'
+import { Page } from 'shared/Page/Page'
 
 const reducers: TReducersList = {
     profile: profileReducer
@@ -64,7 +65,7 @@ const ProfilePage = () => {
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-            <div className={s.profilePage}>
+            <Page className={s.profilePage}>
                 <ProfilePageHeader/>
                 <ProfileCard
                     data={fromData}
@@ -79,7 +80,7 @@ const ProfilePage = () => {
                     onChangeCurrency={onChangeCurrency}
                     readOnly={readOnly}
                 />
-            </div>
+            </Page>
         </DynamicModuleLoader>
     )
 }

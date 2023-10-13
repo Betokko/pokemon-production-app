@@ -8,9 +8,7 @@ export const AppRouter = memo(() => {
     const renderWithWrapper = useCallback((route: TAppRouterProps) => {
         const element = (
             <Suspense fallback={<FullscreenLoader/>}>
-                <div className={'page-wrapper'}>
-                    {route.element}
-                </div>
+                {route.element}
             </Suspense>
         )
         return <Route

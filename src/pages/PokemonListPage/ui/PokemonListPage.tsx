@@ -1,4 +1,4 @@
-import { memo, useEffect } from 'react'
+import { memo, useCallback, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import clsx from 'clsx'
@@ -7,9 +7,15 @@ import { DynamicModuleLoader, TReducersList } from 'shared/lib/components/Dynami
 import { getPokemonList, pokemonListActions, pokemonListReducer } from '../model/slices/pokemonListSlice'
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch'
 import { fetchPokemonList } from '../model/services/fetchPokemonList'
-import { getPokemonListPageIsLoading, getPokemonListPageView } from '../model/selectors/pokemonListSelectors'
+import {
+    getPokemonListPageHasMore,
+    getPokemonListPageIsLoading,
+    getPokemonListPageNum,
+    getPokemonListPageView
+} from '../model/selectors/pokemonListSelectors'
 import { ViewSwitcher } from 'features/ViewSwitcher'
 import s from './PokemonListPage.module.scss'
+import { Page } from 'shared/Page/Page'
 
 interface PokemonListPageProps {
     className?: string
@@ -26,15 +32,26 @@ const PokemonListPage = (props: PokemonListPageProps) => {
     const pokemones = useSelector(getPokemonList.selectAll)
     const isLoading = useSelector(getPokemonListPageIsLoading)
     const view = useSelector(getPokemonListPageView)
+    const page = useSelector(getPokemonListPageNum)
+    const hasMore = useSelector(getPokemonListPageHasMore)
+
+    const onLoadNextPart = useCallback(() => {
+        if (hasMore && !isLoading) {
+            dispatch(pokemonListActions.setPage(page + 1))
+            dispatch(fetchPokemonList({
+                page: page + 1
+            }))
+        }
+    }, [dispatch, hasMore, isLoading, page])
 
     useEffect(() => {
-        dispatch(fetchPokemonList())
         dispatch(pokemonListActions.initState())
+        dispatch(fetchPokemonList({ page: 1 }))
     }, [dispatch])
 
     return (
         <DynamicModuleLoader reducers={reducers}>
-            <div className={clsx([className])}>
+            <Page className={clsx([className])} onScrollEnd={onLoadNextPart}>
                 <div className={s.header}>
                     <ViewSwitcher view={view} />
                     {t('pokemon')}
@@ -44,7 +61,7 @@ const PokemonListPage = (props: PokemonListPageProps) => {
                     isLoading={isLoading}
                     view={view}
                 />
-            </div>
+            </Page>
         </DynamicModuleLoader>
     )
 }
