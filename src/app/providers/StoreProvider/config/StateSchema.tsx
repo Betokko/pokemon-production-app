@@ -3,8 +3,6 @@ import { ILoginSchema } from 'features/AuthByUserName/model/types/loginSchema'
 import { AnyAction, CombinedState, EnhancedStore, Reducer, ReducersMapObject } from '@reduxjs/toolkit'
 import { IProfileSchema } from 'entities/Profile'
 import { AxiosInstance } from 'axios'
-import { To } from '@remix-run/router'
-import { NavigateOptions } from 'react-router/dist/lib/context'
 import { IPokemonSchema } from 'entities/Pokemon'
 import { IPokemonCommentsSchema } from 'pages/PokemonPage'
 import { IAddCommentFormSchema } from 'features/AddCommentForm'
@@ -37,7 +35,6 @@ export interface IReduxStoreWithManager extends EnhancedStore<IStateSchema> {
 
 export interface IThunkExtraArgs {
     api: AxiosInstance
-    navigate?: (to: To, options?: NavigateOptions) => void
 }
 
 export interface IThunkConfig<T> {

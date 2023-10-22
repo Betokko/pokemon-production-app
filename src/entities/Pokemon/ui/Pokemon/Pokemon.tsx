@@ -36,12 +36,12 @@ export const Pokemon = memo((props: PokemonProps) => {
         if (id) dispatch(fetchPokemonById(id))
     }, [dispatch, id])
 
-    const renderBlock = useCallback((block: IPokemonContent) => {
+    const renderBlock = useCallback((block: IPokemonContent, index: number) => {
         switch (block.type) {
         case 'text':
-            return <PokemonContentText block={block} />
+            return <PokemonContentText block={block} key={index}/>
         case 'img':
-            return <PokemonContentImg block={block} />
+            return <PokemonContentImg block={block} key={index}/>
         default:
             return null
         }

@@ -16,6 +16,7 @@ import {
 import { ViewSwitcher } from 'features/ViewSwitcher'
 import s from './PokemonListPage.module.scss'
 import { Page } from 'shared/Page/Page'
+import { initPokemonListPage } from '../model/services/initPokemonListPage'
 
 interface PokemonListPageProps {
     className?: string
@@ -45,12 +46,11 @@ const PokemonListPage = (props: PokemonListPageProps) => {
     }, [dispatch, hasMore, isLoading, page])
 
     useEffect(() => {
-        dispatch(pokemonListActions.initState())
-        dispatch(fetchPokemonList({ page: 1 }))
+        dispatch(initPokemonListPage())
     }, [dispatch])
 
     return (
-        <DynamicModuleLoader reducers={reducers}>
+        <DynamicModuleLoader reducers={reducers} removeAfterUnmount={true} >
             <Page className={clsx([className])} onScrollEnd={onLoadNextPart}>
                 <div className={s.header}>
                     <ViewSwitcher view={view} />

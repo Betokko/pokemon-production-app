@@ -17,7 +17,6 @@ export const loginByUsername = createAsyncThunk<IUser, ILoginByUsername, IThunkC
             if (!res.data) throw new Error()
             localStorage.setItem(USER_LOCALSTORAGE_KEY, JSON.stringify(res.data))
             dispatch(userActions.setAuthData(res.data))
-            extra?.navigate && extra.navigate('/profile')
             return res.data
         } catch (e) {
             console.error(e)

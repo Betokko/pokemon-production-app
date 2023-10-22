@@ -3,13 +3,10 @@ import { IStateSchema, IThunkExtraArgs } from './StateSchema'
 import { userReducer } from 'entities/User'
 import { createReducerManager } from 'app/providers/StoreProvider/config/reducerManaget'
 import { $api } from 'shared/api/api'
-import { To } from '@remix-run/router'
-import { NavigateOptions } from 'react-router/dist/lib/context'
 
 export function createReduxStore (
     initialState?: IStateSchema,
-    asyncReducers?: ReducersMapObject<IStateSchema>,
-    navigate?: (to: To, options?: NavigateOptions) => void
+    asyncReducers?: ReducersMapObject<IStateSchema>
 ) {
     const rootReducers: ReducersMapObject<IStateSchema> = {
         ...asyncReducers,
@@ -19,8 +16,7 @@ export function createReduxStore (
     const reducerManager = createReducerManager(rootReducers)
 
     const extraArgs: IThunkExtraArgs = {
-        api: $api,
-        navigate
+        api: $api
     }
 
     const store = configureStore({

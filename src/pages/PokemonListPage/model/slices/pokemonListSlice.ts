@@ -22,7 +22,8 @@ const pokemonListSlice = createSlice({
         entities: {},
         view: PokemonView.GRID,
         page: 1,
-        hasMore: true
+        hasMore: true,
+        _inited: false
     }),
     reducers: {
         setView: (state, { payload }: PayloadAction<PokemonView>) => {
@@ -36,6 +37,7 @@ const pokemonListSlice = createSlice({
             const view = localStorage.getItem('pokemon_list_view') as PokemonView
             state.view = view
             state.limit = view === PokemonView.LIST ? 2 : 10
+            state._inited = true
         }
     },
     extraReducers: builder => {

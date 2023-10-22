@@ -9,4 +9,6 @@ export interface IPokemonListSchema extends EntityState<IPokemon> {
     page: number
     limit?: number
     hasMore: boolean
+
+    _inited?: boolean
 }
