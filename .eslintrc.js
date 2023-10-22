@@ -63,6 +63,7 @@ module.exports = {
         'no-param-reassign': 'off',
         '@typescript-eslint/no-dynamic-delete': 'off',
         '@typescript-eslint/no-invalid-void-type': 'off',
-        '@typescript-eslint/no-floating-promises': 'off'
+        '@typescript-eslint/no-floating-promises': 'off',
+        'n/no-callback-literal': 'off'
     }
 }
